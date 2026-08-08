@@ -1,0 +1,3527 @@
+[
+  {
+    "urn": "urn:li:dataset:(urn:li:dataPlatform:dbt,b2fd91.ORDER_ENTRY_DB.analytics.order_details,PROD)",
+    "name": "order_details",
+    "platform": "dbt",
+    "composite_score": 72.9,
+    "grade": "B-",
+    "tier": "review",
+    "assessed_at": "2026-08-05 15:07:58.938560",
+    "evidence_summary": "Dataset order_details is graded B with a composite score of 75.2/100. Key remediation required in the following dimensions: integrity, adoption.",
+    "dimensions": {
+      "provenance": {
+        "score": 100.0,
+        "evidence": [
+          "12 owners assigned",
+          "Description present (2394 chars)",
+          "55/55 columns documented",
+          "5 glossary terms linked",
+          "Assigned to domain: Data Platform Team"
+        ]
+      },
+      "integrity": {
+        "score": 60.0,
+        "evidence": [
+          "No quality assertions defined (-40)",
+          "All health checks passing"
+        ]
+      },
+      "stability": {
+        "score": 85.0,
+        "evidence": [
+          "Schema has 55 fields",
+          "No primary keys defined (-15)",
+          "Subtypes: Model"
+        ]
+      },
+      "lineage": {
+        "score": 84.5,
+        "evidence": [
+          "69 upstream sources",
+          "35 downstream consumers",
+          "Consumed by 3 entity types: DASHBOARD, CHART, DATASET",
+          "Lineage risk cascade penalty: -15.5 (inherited from untrusted upstream source: urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.addresses,PROD))"
+        ]
+      },
+      "adoption": {
+        "score": 30.0,
+        "evidence": [
+          "No queries recorded in the last month (-40)",
+          "No unique users queried this asset (-30)"
+        ]
+      }
+    }
+  },
+  {
+    "urn": "urn:li:dataset:(urn:li:dataPlatform:dbt,b2fd91.order_entry_db.order_entry.addresses,PROD)",
+    "name": "addresses",
+    "platform": "dbt",
+    "composite_score": 72.9,
+    "grade": "B-",
+    "tier": "review",
+    "assessed_at": "2026-08-05 15:08:00.709408",
+    "evidence_summary": "Dataset addresses is graded B with a composite score of 75.2/100. Key remediation required in the following dimensions: integrity, adoption.",
+    "dimensions": {
+      "provenance": {
+        "score": 100.0,
+        "evidence": [
+          "2 owners assigned",
+          "Description present (62 chars)",
+          "9/9 columns documented",
+          "3 glossary terms linked",
+          "Assigned to domain: Data Platform Team"
+        ]
+      },
+      "integrity": {
+        "score": 60.0,
+        "evidence": [
+          "No quality assertions defined (-40)",
+          "All health checks passing"
+        ]
+      },
+      "stability": {
+        "score": 85.0,
+        "evidence": [
+          "Schema has 9 fields",
+          "No primary keys defined (-15)",
+          "Subtypes: Source"
+        ]
+      },
+      "lineage": {
+        "score": 84.5,
+        "evidence": [
+          "5 upstream sources",
+          "36 downstream consumers",
+          "Consumed by 3 entity types: DASHBOARD, CHART, DATASET",
+          "Lineage risk cascade penalty: -15.5 (inherited from untrusted upstream source: urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.addresses,PROD))"
+        ]
+      },
+      "adoption": {
+        "score": 30.0,
+        "evidence": [
+          "No queries recorded in the last month (-40)",
+          "No unique users queried this asset (-30)"
+        ]
+      }
+    }
+  },
+  {
+    "urn": "urn:li:dataset:(urn:li:dataPlatform:dbt,b2fd91.order_entry_db.order_entry.countries,PROD)",
+    "name": "countries",
+    "platform": "dbt",
+    "composite_score": 70.4,
+    "grade": "B-",
+    "tier": "review",
+    "assessed_at": "2026-08-05 15:08:01.237356",
+    "evidence_summary": "Dataset countries is graded B- with a composite score of 72.8/100. Key remediation required in the following dimensions: integrity, adoption.",
+    "dimensions": {
+      "provenance": {
+        "score": 90.0,
+        "evidence": [
+          "2 owners assigned",
+          "Description too brief (<50 chars) (-10)",
+          "4/4 columns documented",
+          "3 glossary terms linked",
+          "Assigned to domain: Data Platform Team"
+        ]
+      },
+      "integrity": {
+        "score": 60.0,
+        "evidence": [
+          "No quality assertions defined (-40)",
+          "All health checks passing"
+        ]
+      },
+      "stability": {
+        "score": 85.0,
+        "evidence": [
+          "Schema has 4 fields",
+          "No primary keys defined (-15)",
+          "Subtypes: Source"
+        ]
+      },
+      "lineage": {
+        "score": 84.5,
+        "evidence": [
+          "5 upstream sources",
+          "36 downstream consumers",
+          "Consumed by 3 entity types: DASHBOARD, CHART, DATASET",
+          "Lineage risk cascade penalty: -15.5 (inherited from untrusted upstream source: urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.countries,PROD))"
+        ]
+      },
+      "adoption": {
+        "score": 30.0,
+        "evidence": [
+          "No queries recorded in the last month (-40)",
+          "No unique users queried this asset (-30)"
+        ]
+      }
+    }
+  },
+  {
+    "urn": "urn:li:dataset:(urn:li:dataPlatform:dbt,b2fd91.order_entry_db.order_entry.customers,PROD)",
+    "name": "customers",
+    "platform": "dbt",
+    "composite_score": 72.9,
+    "grade": "B-",
+    "tier": "review",
+    "assessed_at": "2026-08-05 15:08:01.834981",
+    "evidence_summary": "Dataset customers is graded B with a composite score of 75.2/100. Key remediation required in the following dimensions: integrity, adoption.",
+    "dimensions": {
+      "provenance": {
+        "score": 100.0,
+        "evidence": [
+          "3 owners assigned",
+          "Description present (53 chars)",
+          "22/22 columns documented",
+          "4 glossary terms linked",
+          "Assigned to domain: Data Platform Team"
+        ]
+      },
+      "integrity": {
+        "score": 60.0,
+        "evidence": [
+          "No quality assertions defined (-40)",
+          "All health checks passing"
+        ]
+      },
+      "stability": {
+        "score": 85.0,
+        "evidence": [
+          "Schema has 22 fields",
+          "No primary keys defined (-15)",
+          "Subtypes: Source"
+        ]
+      },
+      "lineage": {
+        "score": 84.5,
+        "evidence": [
+          "5 upstream sources",
+          "36 downstream consumers",
+          "Consumed by 3 entity types: DASHBOARD, CHART, DATASET",
+          "Lineage risk cascade penalty: -15.5 (inherited from untrusted upstream source: urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.customers,PROD))"
+        ]
+      },
+      "adoption": {
+        "score": 30.0,
+        "evidence": [
+          "No queries recorded in the last month (-40)",
+          "No unique users queried this asset (-30)"
+        ]
+      }
+    }
+  },
+  {
+    "urn": "urn:li:dataset:(urn:li:dataPlatform:dbt,b2fd91.order_entry_db.order_entry.inventories,PROD)",
+    "name": "inventories",
+    "platform": "dbt",
+    "composite_score": 70.4,
+    "grade": "B-",
+    "tier": "review",
+    "assessed_at": "2026-08-05 15:08:02.358140",
+    "evidence_summary": "Dataset inventories is graded B- with a composite score of 72.8/100. Key remediation required in the following dimensions: integrity, adoption.",
+    "dimensions": {
+      "provenance": {
+        "score": 90.0,
+        "evidence": [
+          "2 owners assigned",
+          "Description too brief (<50 chars) (-10)",
+          "6/6 columns documented",
+          "3 glossary terms linked",
+          "Assigned to domain: Data Platform Team"
+        ]
+      },
+      "integrity": {
+        "score": 60.0,
+        "evidence": [
+          "No quality assertions defined (-40)",
+          "All health checks passing"
+        ]
+      },
+      "stability": {
+        "score": 85.0,
+        "evidence": [
+          "Schema has 6 fields",
+          "No primary keys defined (-15)",
+          "Subtypes: Source"
+        ]
+      },
+      "lineage": {
+        "score": 84.5,
+        "evidence": [
+          "5 upstream sources",
+          "36 downstream consumers",
+          "Consumed by 3 entity types: DASHBOARD, CHART, DATASET",
+          "Lineage risk cascade penalty: -15.5 (inherited from untrusted upstream source: urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.inventories,PROD))"
+        ]
+      },
+      "adoption": {
+        "score": 30.0,
+        "evidence": [
+          "No queries recorded in the last month (-40)",
+          "No unique users queried this asset (-30)"
+        ]
+      }
+    }
+  },
+  {
+    "urn": "urn:li:dataset:(urn:li:dataPlatform:dbt,b2fd91.order_entry_db.order_entry.order_items,PROD)",
+    "name": "order_items",
+    "platform": "dbt",
+    "composite_score": 70.4,
+    "grade": "B-",
+    "tier": "review",
+    "assessed_at": "2026-08-05 15:08:02.858386",
+    "evidence_summary": "Dataset order_items is graded B- with a composite score of 72.8/100. Key remediation required in the following dimensions: integrity, adoption.",
+    "dimensions": {
+      "provenance": {
+        "score": 90.0,
+        "evidence": [
+          "2 owners assigned",
+          "Description too brief (<50 chars) (-10)",
+          "11/11 columns documented",
+          "3 glossary terms linked",
+          "Assigned to domain: Data Platform Team"
+        ]
+      },
+      "integrity": {
+        "score": 60.0,
+        "evidence": [
+          "No quality assertions defined (-40)",
+          "All health checks passing"
+        ]
+      },
+      "stability": {
+        "score": 85.0,
+        "evidence": [
+          "Schema has 11 fields",
+          "No primary keys defined (-15)",
+          "Subtypes: Source"
+        ]
+      },
+      "lineage": {
+        "score": 84.5,
+        "evidence": [
+          "5 upstream sources",
+          "36 downstream consumers",
+          "Consumed by 3 entity types: DASHBOARD, CHART, DATASET",
+          "Lineage risk cascade penalty: -15.5 (inherited from untrusted upstream source: urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.order_items,PROD))"
+        ]
+      },
+      "adoption": {
+        "score": 30.0,
+        "evidence": [
+          "No queries recorded in the last month (-40)",
+          "No unique users queried this asset (-30)"
+        ]
+      }
+    }
+  },
+  {
+    "urn": "urn:li:dataset:(urn:li:dataPlatform:dbt,b2fd91.order_entry_db.order_entry.orders,PROD)",
+    "name": "orders",
+    "platform": "dbt",
+    "composite_score": 70.4,
+    "grade": "B-",
+    "tier": "review",
+    "assessed_at": "2026-08-05 15:08:03.448209",
+    "evidence_summary": "Dataset orders is graded B- with a composite score of 72.8/100. Key remediation required in the following dimensions: integrity, adoption.",
+    "dimensions": {
+      "provenance": {
+        "score": 90.0,
+        "evidence": [
+          "2 owners assigned",
+          "Description too brief (<50 chars) (-10)",
+          "15/15 columns documented",
+          "3 glossary terms linked",
+          "Assigned to domain: Data Platform Team"
+        ]
+      },
+      "integrity": {
+        "score": 60.0,
+        "evidence": [
+          "No quality assertions defined (-40)",
+          "All health checks passing"
+        ]
+      },
+      "stability": {
+        "score": 85.0,
+        "evidence": [
+          "Schema has 15 fields",
+          "No primary keys defined (-15)",
+          "Subtypes: Source"
+        ]
+      },
+      "lineage": {
+        "score": 84.5,
+        "evidence": [
+          "5 upstream sources",
+          "36 downstream consumers",
+          "Consumed by 3 entity types: DASHBOARD, CHART, DATASET",
+          "Lineage risk cascade penalty: -15.5 (inherited from untrusted upstream source: urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.orders,PROD))"
+        ]
+      },
+      "adoption": {
+        "score": 30.0,
+        "evidence": [
+          "No queries recorded in the last month (-40)",
+          "No unique users queried this asset (-30)"
+        ]
+      }
+    }
+  },
+  {
+    "urn": "urn:li:dataset:(urn:li:dataPlatform:dbt,b2fd91.order_entry_db.order_entry.product_categories,PROD)",
+    "name": "product_categories",
+    "platform": "dbt",
+    "composite_score": 72.9,
+    "grade": "B-",
+    "tier": "review",
+    "assessed_at": "2026-08-05 15:08:03.874102",
+    "evidence_summary": "Dataset product_categories is graded B with a composite score of 75.2/100. Key remediation required in the following dimensions: integrity, adoption.",
+    "dimensions": {
+      "provenance": {
+        "score": 100.0,
+        "evidence": [
+          "2 owners assigned",
+          "Description present (51 chars)",
+          "4/4 columns documented",
+          "3 glossary terms linked",
+          "Assigned to domain: Data Platform Team"
+        ]
+      },
+      "integrity": {
+        "score": 60.0,
+        "evidence": [
+          "No quality assertions defined (-40)",
+          "All health checks passing"
+        ]
+      },
+      "stability": {
+        "score": 85.0,
+        "evidence": [
+          "Schema has 4 fields",
+          "No primary keys defined (-15)",
+          "Subtypes: Source"
+        ]
+      },
+      "lineage": {
+        "score": 84.5,
+        "evidence": [
+          "5 upstream sources",
+          "36 downstream consumers",
+          "Consumed by 3 entity types: DASHBOARD, CHART, DATASET",
+          "Lineage risk cascade penalty: -15.5 (inherited from untrusted upstream source: urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.product_categories,PROD))"
+        ]
+      },
+      "adoption": {
+        "score": 30.0,
+        "evidence": [
+          "No queries recorded in the last month (-40)",
+          "No unique users queried this asset (-30)"
+        ]
+      }
+    }
+  },
+  {
+    "urn": "urn:li:dataset:(urn:li:dataPlatform:dbt,b2fd91.order_entry_db.order_entry.products,PROD)",
+    "name": "products",
+    "platform": "dbt",
+    "composite_score": 72.9,
+    "grade": "B-",
+    "tier": "review",
+    "assessed_at": "2026-08-05 15:08:04.405844",
+    "evidence_summary": "Dataset products is graded B with a composite score of 75.2/100. Key remediation required in the following dimensions: integrity, adoption.",
+    "dimensions": {
+      "provenance": {
+        "score": 100.0,
+        "evidence": [
+          "3 owners assigned",
+          "Description present (54 chars)",
+          "12/12 columns documented",
+          "3 glossary terms linked",
+          "Assigned to domain: Data Platform Team"
+        ]
+      },
+      "integrity": {
+        "score": 60.0,
+        "evidence": [
+          "No quality assertions defined (-40)",
+          "All health checks passing"
+        ]
+      },
+      "stability": {
+        "score": 85.0,
+        "evidence": [
+          "Schema has 12 fields",
+          "No primary keys defined (-15)",
+          "Subtypes: Source"
+        ]
+      },
+      "lineage": {
+        "score": 84.5,
+        "evidence": [
+          "5 upstream sources",
+          "36 downstream consumers",
+          "Consumed by 3 entity types: DASHBOARD, CHART, DATASET",
+          "Lineage risk cascade penalty: -15.5 (inherited from untrusted upstream source: urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.products,PROD))"
+        ]
+      },
+      "adoption": {
+        "score": 30.0,
+        "evidence": [
+          "No queries recorded in the last month (-40)",
+          "No unique users queried this asset (-30)"
+        ]
+      }
+    }
+  },
+  {
+    "urn": "urn:li:dataset:(urn:li:dataPlatform:dbt,b2fd91.order_entry_db.order_entry.promotions,PROD)",
+    "name": "promotions",
+    "platform": "dbt",
+    "composite_score": 72.9,
+    "grade": "B-",
+    "tier": "review",
+    "assessed_at": "2026-08-05 15:08:05.060603",
+    "evidence_summary": "Dataset promotions is graded B with a composite score of 75.2/100. Key remediation required in the following dimensions: integrity, adoption.",
+    "dimensions": {
+      "provenance": {
+        "score": 100.0,
+        "evidence": [
+          "2 owners assigned",
+          "Description present (61 chars)",
+          "6/6 columns documented",
+          "3 glossary terms linked",
+          "Assigned to domain: Data Platform Team"
+        ]
+      },
+      "integrity": {
+        "score": 60.0,
+        "evidence": [
+          "No quality assertions defined (-40)",
+          "All health checks passing"
+        ]
+      },
+      "stability": {
+        "score": 85.0,
+        "evidence": [
+          "Schema has 6 fields",
+          "No primary keys defined (-15)",
+          "Subtypes: Source"
+        ]
+      },
+      "lineage": {
+        "score": 84.5,
+        "evidence": [
+          "8 upstream sources",
+          "36 downstream consumers",
+          "Consumed by 3 entity types: DASHBOARD, CHART, DATASET",
+          "Lineage risk cascade penalty: -15.5 (inherited from untrusted upstream source: urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.product_information,PROD))"
+        ]
+      },
+      "adoption": {
+        "score": 30.0,
+        "evidence": [
+          "No queries recorded in the last month (-40)",
+          "No unique users queried this asset (-30)"
+        ]
+      }
+    }
+  },
+  {
+    "urn": "urn:li:dataset:(urn:li:dataPlatform:dbt,b2fd91.order_entry_db.order_entry.regions,PROD)",
+    "name": "regions",
+    "platform": "dbt",
+    "composite_score": 72.9,
+    "grade": "B-",
+    "tier": "review",
+    "assessed_at": "2026-08-05 15:08:05.467793",
+    "evidence_summary": "Dataset regions is graded B with a composite score of 75.2/100. Key remediation required in the following dimensions: integrity, adoption.",
+    "dimensions": {
+      "provenance": {
+        "score": 100.0,
+        "evidence": [
+          "2 owners assigned",
+          "Description present (57 chars)",
+          "4/4 columns documented",
+          "3 glossary terms linked",
+          "Assigned to domain: Data Platform Team"
+        ]
+      },
+      "integrity": {
+        "score": 60.0,
+        "evidence": [
+          "No quality assertions defined (-40)",
+          "All health checks passing"
+        ]
+      },
+      "stability": {
+        "score": 85.0,
+        "evidence": [
+          "Schema has 4 fields",
+          "No primary keys defined (-15)",
+          "Subtypes: Source"
+        ]
+      },
+      "lineage": {
+        "score": 84.5,
+        "evidence": [
+          "5 upstream sources",
+          "36 downstream consumers",
+          "Consumed by 3 entity types: DASHBOARD, CHART, DATASET",
+          "Lineage risk cascade penalty: -15.5 (inherited from untrusted upstream source: urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.regions,PROD))"
+        ]
+      },
+      "adoption": {
+        "score": 30.0,
+        "evidence": [
+          "No queries recorded in the last month (-40)",
+          "No unique users queried this asset (-30)"
+        ]
+      }
+    }
+  },
+  {
+    "urn": "urn:li:dataset:(urn:li:dataPlatform:dbt,b2fd91.order_entry_db.order_entry.warehouses,PROD)",
+    "name": "warehouses",
+    "platform": "dbt",
+    "composite_score": 72.9,
+    "grade": "B-",
+    "tier": "review",
+    "assessed_at": "2026-08-05 15:08:06.043171",
+    "evidence_summary": "Dataset warehouses is graded B with a composite score of 75.2/100. Key remediation required in the following dimensions: integrity, adoption.",
+    "dimensions": {
+      "provenance": {
+        "score": 100.0,
+        "evidence": [
+          "2 owners assigned",
+          "Description present (56 chars)",
+          "4/4 columns documented",
+          "3 glossary terms linked",
+          "Assigned to domain: Data Platform Team"
+        ]
+      },
+      "integrity": {
+        "score": 60.0,
+        "evidence": [
+          "No quality assertions defined (-40)",
+          "All health checks passing"
+        ]
+      },
+      "stability": {
+        "score": 85.0,
+        "evidence": [
+          "Schema has 4 fields",
+          "No primary keys defined (-15)",
+          "Subtypes: Source"
+        ]
+      },
+      "lineage": {
+        "score": 84.5,
+        "evidence": [
+          "5 upstream sources",
+          "36 downstream consumers",
+          "Consumed by 3 entity types: DASHBOARD, CHART, DATASET",
+          "Lineage risk cascade penalty: -15.5 (inherited from untrusted upstream source: urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.warehouses,PROD))"
+        ]
+      },
+      "adoption": {
+        "score": 30.0,
+        "evidence": [
+          "No queries recorded in the last month (-40)",
+          "No unique users queried this asset (-30)"
+        ]
+      }
+    }
+  },
+  {
+    "urn": "urn:li:dataset:(urn:li:dataPlatform:dbt,b2fd91.ORDER_ENTRY_DB.analytics.order_history,PROD)",
+    "name": "order_history",
+    "platform": "dbt",
+    "composite_score": 56.9,
+    "grade": "C-",
+    "tier": "review",
+    "assessed_at": "2026-08-05 15:08:06.435591",
+    "evidence_summary": "Dataset order_history is graded C- with a composite score of 59.2/100. Key remediation required in the following dimensions: provenance, integrity, adoption.",
+    "dimensions": {
+      "provenance": {
+        "score": 45.0,
+        "evidence": [
+          "No owners assigned (-30)",
+          "Description present (61 chars)",
+          "0/5 columns documented (-25)",
+          "1 glossary terms linked",
+          "Assigned to domain: E-Commerce"
+        ]
+      },
+      "integrity": {
+        "score": 60.0,
+        "evidence": [
+          "No quality assertions defined (-40)",
+          "All health checks passing"
+        ]
+      },
+      "stability": {
+        "score": 85.0,
+        "evidence": [
+          "Schema has 5 fields",
+          "No primary keys defined (-15)",
+          "Subtypes: Model"
+        ]
+      },
+      "lineage": {
+        "score": 69.5,
+        "evidence": [
+          "71 upstream sources",
+          "Only 1 downstream consumer (-10)",
+          "All consumers are same type (-5)",
+          "Lineage risk cascade penalty: -15.5 (inherited from untrusted upstream source: urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.addresses,PROD))"
+        ]
+      },
+      "adoption": {
+        "score": 30.0,
+        "evidence": [
+          "No queries recorded in the last month (-40)",
+          "No unique users queried this asset (-30)"
+        ]
+      }
+    }
+  },
+  {
+    "urn": "urn:li:dataset:(urn:li:dataPlatform:looker,b2fd91.order-entry-looker.view.order_details,PROD)",
+    "name": "order_details",
+    "platform": "looker",
+    "composite_score": 60.4,
+    "grade": "C",
+    "tier": "review",
+    "assessed_at": "2026-08-05 15:08:07.055954",
+    "evidence_summary": "Dataset order_details is graded C with a composite score of 62.8/100. Key remediation required in the following dimensions: provenance, integrity, adoption.",
+    "dimensions": {
+      "provenance": {
+        "score": 50.0,
+        "evidence": [
+          "4 owners assigned",
+          "No dataset description (-25)",
+          "0/57 columns documented (-25)",
+          "1 glossary terms linked",
+          "Assigned to domain: Data Platform Team"
+        ]
+      },
+      "integrity": {
+        "score": 60.0,
+        "evidence": [
+          "No quality assertions defined (-40)",
+          "All health checks passing"
+        ]
+      },
+      "stability": {
+        "score": 85.0,
+        "evidence": [
+          "Schema has 57 fields",
+          "No primary keys defined (-15)",
+          "Subtypes: View"
+        ]
+      },
+      "lineage": {
+        "score": 84.5,
+        "evidence": [
+          "71 upstream sources",
+          "6 downstream consumers",
+          "Consumed by 3 entity types: DASHBOARD, CHART, DATASET",
+          "Lineage risk cascade penalty: -15.5 (inherited from untrusted upstream source: urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.addresses,PROD))"
+        ]
+      },
+      "adoption": {
+        "score": 30.0,
+        "evidence": [
+          "No queries recorded in the last month (-40)",
+          "No unique users queried this asset (-30)"
+        ]
+      }
+    }
+  },
+  {
+    "urn": "urn:li:dataset:(urn:li:dataPlatform:looker,b2fd91.order-entry.explore.order_details,PROD)",
+    "name": "Order Details",
+    "platform": "looker",
+    "composite_score": 66.7,
+    "grade": "C+",
+    "tier": "review",
+    "assessed_at": "2026-08-05 15:08:07.443496",
+    "evidence_summary": "Dataset Order Details is graded C+ with a composite score of 69.0/100. Key remediation required in the following dimensions: integrity, adoption.",
+    "dimensions": {
+      "provenance": {
+        "score": 75.0,
+        "evidence": [
+          "3 owners assigned",
+          "Description present (2221 chars)",
+          "0/63 columns documented (-25)",
+          "1 glossary terms linked",
+          "Assigned to domain: Data Platform Team"
+        ]
+      },
+      "integrity": {
+        "score": 60.0,
+        "evidence": [
+          "No quality assertions defined (-40)",
+          "All health checks passing"
+        ]
+      },
+      "stability": {
+        "score": 85.0,
+        "evidence": [
+          "Schema has 63 fields",
+          "No primary keys defined (-15)",
+          "Subtypes: Explore"
+        ]
+      },
+      "lineage": {
+        "score": 84.5,
+        "evidence": [
+          "72 upstream sources",
+          "5 downstream consumers",
+          "Consumed by 2 entity types: DASHBOARD, CHART",
+          "Lineage risk cascade penalty: -15.5 (inherited from untrusted upstream source: urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.addresses,PROD))"
+        ]
+      },
+      "adoption": {
+        "score": 30.0,
+        "evidence": [
+          "No queries recorded in the last month (-40)",
+          "No unique users queried this asset (-30)"
+        ]
+      }
+    }
+  },
+  {
+    "urn": "urn:li:dataset:(urn:li:dataPlatform:snowflake,b2fd91.order_entry_db.analytics.order_details,PROD)",
+    "name": "ORDER_DETAILS",
+    "platform": "snowflake",
+    "composite_score": 64.2,
+    "grade": "C",
+    "tier": "review",
+    "assessed_at": "2026-08-05 15:08:07.987064",
+    "evidence_summary": "Dataset ORDER_DETAILS is graded C+ with a composite score of 66.5/100. Key remediation required in the following dimensions: provenance, integrity, adoption.",
+    "dimensions": {
+      "provenance": {
+        "score": 65.0,
+        "evidence": [
+          "3 owners assigned",
+          "Description too brief (<50 chars) (-10)",
+          "0/55 columns documented (-25)",
+          "4 glossary terms linked",
+          "Assigned to domain: Ecommerce Operations"
+        ]
+      },
+      "integrity": {
+        "score": 60.0,
+        "evidence": [
+          "No quality assertions defined (-40)",
+          "All health checks passing"
+        ]
+      },
+      "stability": {
+        "score": 85.0,
+        "evidence": [
+          "Schema has 55 fields",
+          "No primary keys defined (-15)",
+          "Subtypes: Table"
+        ]
+      },
+      "lineage": {
+        "score": 84.5,
+        "evidence": [
+          "70 upstream sources",
+          "34 downstream consumers",
+          "Consumed by 3 entity types: DASHBOARD, CHART, DATASET",
+          "Lineage risk cascade penalty: -15.5 (inherited from untrusted upstream source: urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.addresses,PROD))"
+        ]
+      },
+      "adoption": {
+        "score": 30.0,
+        "evidence": [
+          "No queries recorded in the last month (-40)",
+          "No unique users queried this asset (-30)"
+        ]
+      }
+    }
+  },
+  {
+    "urn": "urn:li:dataset:(urn:li:dataPlatform:powerbi,b2fd91.datahub_order_entries.ORDER_DETAILS,PROD)",
+    "name": "ORDER_DETAILS",
+    "platform": "powerbi",
+    "composite_score": 55.4,
+    "grade": "C-",
+    "tier": "review",
+    "assessed_at": "2026-08-05 15:08:08.388845",
+    "evidence_summary": "Dataset ORDER_DETAILS is graded C- with a composite score of 57.8/100. Key remediation required in the following dimensions: provenance, integrity, adoption.",
+    "dimensions": {
+      "provenance": {
+        "score": 30.0,
+        "evidence": [
+          "Single owner, no backup (-10)",
+          "No dataset description (-25)",
+          "0/57 columns documented (-25)",
+          "1 glossary terms linked",
+          "Not assigned to any domain (-10)"
+        ]
+      },
+      "integrity": {
+        "score": 60.0,
+        "evidence": [
+          "No quality assertions defined (-40)",
+          "All health checks passing"
+        ]
+      },
+      "stability": {
+        "score": 85.0,
+        "evidence": [
+          "Schema has 57 fields",
+          "No primary keys defined (-15)",
+          "Subtypes: Table"
+        ]
+      },
+      "lineage": {
+        "score": 84.5,
+        "evidence": [
+          "71 upstream sources",
+          "5 downstream consumers",
+          "Consumed by 2 entity types: DASHBOARD, CHART",
+          "Lineage risk cascade penalty: -15.5 (inherited from untrusted upstream source: urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.addresses,PROD))"
+        ]
+      },
+      "adoption": {
+        "score": 30.0,
+        "evidence": [
+          "No queries recorded in the last month (-40)",
+          "No unique users queried this asset (-30)"
+        ]
+      }
+    }
+  },
+  {
+    "urn": "urn:li:dataset:(urn:li:dataPlatform:tableau,b2fd91.b980a8c5-28eb-119e-f6ca-4da32732e5be,PROD)",
+    "name": "Promotions",
+    "platform": "tableau",
+    "composite_score": 55.4,
+    "grade": "C-",
+    "tier": "review",
+    "assessed_at": "2026-08-05 15:08:08.948384",
+    "evidence_summary": "Dataset Promotions is graded C- with a composite score of 57.8/100. Key remediation required in the following dimensions: provenance, integrity, adoption.",
+    "dimensions": {
+      "provenance": {
+        "score": 30.0,
+        "evidence": [
+          "Single owner, no backup (-10)",
+          "No dataset description (-25)",
+          "0/6 columns documented (-25)",
+          "1 glossary terms linked",
+          "Not assigned to any domain (-10)"
+        ]
+      },
+      "integrity": {
+        "score": 60.0,
+        "evidence": [
+          "No quality assertions defined (-40)",
+          "All health checks passing"
+        ]
+      },
+      "stability": {
+        "score": 85.0,
+        "evidence": [
+          "Schema has 6 fields",
+          "No primary keys defined (-15)",
+          "Subtypes: Embedded Data Source"
+        ]
+      },
+      "lineage": {
+        "score": 84.5,
+        "evidence": [
+          "72 upstream sources",
+          "2 downstream consumers",
+          "Consumed by 2 entity types: DASHBOARD, CHART",
+          "Lineage risk cascade penalty: -15.5 (inherited from untrusted upstream source: urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.addresses,PROD))"
+        ]
+      },
+      "adoption": {
+        "score": 30.0,
+        "evidence": [
+          "No queries recorded in the last month (-40)",
+          "No unique users queried this asset (-30)"
+        ]
+      }
+    }
+  },
+  {
+    "urn": "urn:li:dataset:(urn:li:dataPlatform:tableau,b2fd91.c067553a-127e-a871-14a0-5f32cb032c78,PROD)",
+    "name": "Order Mode",
+    "platform": "tableau",
+    "composite_score": 55.4,
+    "grade": "C-",
+    "tier": "review",
+    "assessed_at": "2026-08-05 15:08:09.365918",
+    "evidence_summary": "Dataset Order Mode is graded C- with a composite score of 57.8/100. Key remediation required in the following dimensions: provenance, integrity, adoption.",
+    "dimensions": {
+      "provenance": {
+        "score": 30.0,
+        "evidence": [
+          "Single owner, no backup (-10)",
+          "No dataset description (-25)",
+          "0/5 columns documented (-25)",
+          "1 glossary terms linked",
+          "Not assigned to any domain (-10)"
+        ]
+      },
+      "integrity": {
+        "score": 60.0,
+        "evidence": [
+          "No quality assertions defined (-40)",
+          "All health checks passing"
+        ]
+      },
+      "stability": {
+        "score": 85.0,
+        "evidence": [
+          "Schema has 5 fields",
+          "No primary keys defined (-15)",
+          "Subtypes: Embedded Data Source"
+        ]
+      },
+      "lineage": {
+        "score": 84.5,
+        "evidence": [
+          "72 upstream sources",
+          "2 downstream consumers",
+          "Consumed by 2 entity types: DASHBOARD, CHART",
+          "Lineage risk cascade penalty: -15.5 (inherited from untrusted upstream source: urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.addresses,PROD))"
+        ]
+      },
+      "adoption": {
+        "score": 30.0,
+        "evidence": [
+          "No queries recorded in the last month (-40)",
+          "No unique users queried this asset (-30)"
+        ]
+      }
+    }
+  },
+  {
+    "urn": "urn:li:dataset:(urn:li:dataPlatform:tableau,b2fd91.f8fb6a0b-7be6-690b-cc45-3c6e0fd2bcde,PROD)",
+    "name": "Orders By Day",
+    "platform": "tableau",
+    "composite_score": 55.4,
+    "grade": "C-",
+    "tier": "review",
+    "assessed_at": "2026-08-05 15:08:09.919595",
+    "evidence_summary": "Dataset Orders By Day is graded C- with a composite score of 57.8/100. Key remediation required in the following dimensions: provenance, integrity, adoption.",
+    "dimensions": {
+      "provenance": {
+        "score": 30.0,
+        "evidence": [
+          "Single owner, no backup (-10)",
+          "No dataset description (-25)",
+          "0/5 columns documented (-25)",
+          "1 glossary terms linked",
+          "Not assigned to any domain (-10)"
+        ]
+      },
+      "integrity": {
+        "score": 60.0,
+        "evidence": [
+          "No quality assertions defined (-40)",
+          "All health checks passing"
+        ]
+      },
+      "stability": {
+        "score": 85.0,
+        "evidence": [
+          "Schema has 5 fields",
+          "No primary keys defined (-15)",
+          "Subtypes: Embedded Data Source"
+        ]
+      },
+      "lineage": {
+        "score": 84.5,
+        "evidence": [
+          "72 upstream sources",
+          "2 downstream consumers",
+          "Consumed by 2 entity types: DASHBOARD, CHART",
+          "Lineage risk cascade penalty: -15.5 (inherited from untrusted upstream source: urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.addresses,PROD))"
+        ]
+      },
+      "adoption": {
+        "score": 30.0,
+        "evidence": [
+          "No queries recorded in the last month (-40)",
+          "No unique users queried this asset (-30)"
+        ]
+      }
+    }
+  },
+  {
+    "urn": "urn:li:dataset:(urn:li:dataPlatform:tableau,b2fd91.fadbf744-48be-0929-a47c-5786327a3343,PROD)",
+    "name": "Top Product Category",
+    "platform": "tableau",
+    "composite_score": 55.4,
+    "grade": "C-",
+    "tier": "review",
+    "assessed_at": "2026-08-05 15:08:10.328542",
+    "evidence_summary": "Dataset Top Product Category is graded C- with a composite score of 57.8/100. Key remediation required in the following dimensions: provenance, integrity, adoption.",
+    "dimensions": {
+      "provenance": {
+        "score": 30.0,
+        "evidence": [
+          "Single owner, no backup (-10)",
+          "No dataset description (-25)",
+          "0/5 columns documented (-25)",
+          "1 glossary terms linked",
+          "Not assigned to any domain (-10)"
+        ]
+      },
+      "integrity": {
+        "score": 60.0,
+        "evidence": [
+          "No quality assertions defined (-40)",
+          "All health checks passing"
+        ]
+      },
+      "stability": {
+        "score": 85.0,
+        "evidence": [
+          "Schema has 5 fields",
+          "No primary keys defined (-15)",
+          "Subtypes: Embedded Data Source"
+        ]
+      },
+      "lineage": {
+        "score": 84.5,
+        "evidence": [
+          "72 upstream sources",
+          "2 downstream consumers",
+          "Consumed by 2 entity types: DASHBOARD, CHART",
+          "Lineage risk cascade penalty: -15.5 (inherited from untrusted upstream source: urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.addresses,PROD))"
+        ]
+      },
+      "adoption": {
+        "score": 30.0,
+        "evidence": [
+          "No queries recorded in the last month (-40)",
+          "No unique users queried this asset (-30)"
+        ]
+      }
+    }
+  },
+  {
+    "urn": "urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.addresses,PROD)",
+    "name": "addresses",
+    "platform": "postgres",
+    "composite_score": 48.2,
+    "grade": "D",
+    "tier": "untrusted",
+    "assessed_at": "2026-08-05 15:08:10.866337",
+    "evidence_summary": "Dataset addresses is graded D with a composite score of 48.2/100. Key remediation required in the following dimensions: provenance, integrity, lineage, adoption.",
+    "dimensions": {
+      "provenance": {
+        "score": 10.0,
+        "evidence": [
+          "No owners assigned (-30)",
+          "No dataset description (-25)",
+          "0/9 columns documented (-25)",
+          "1 glossary terms linked",
+          "Not assigned to any domain (-10)"
+        ]
+      },
+      "integrity": {
+        "score": 60.0,
+        "evidence": [
+          "No quality assertions defined (-40)",
+          "All health checks passing"
+        ]
+      },
+      "stability": {
+        "score": 85.0,
+        "evidence": [
+          "Schema has 9 fields",
+          "No primary keys defined (-15)",
+          "Subtypes: Table"
+        ]
+      },
+      "lineage": {
+        "score": 70.0,
+        "evidence": [
+          "No upstream sources found (-30)",
+          "41 downstream consumers",
+          "Consumed by 4 entity types: DATA_JOB, DASHBOARD, CHART, DATASET"
+        ]
+      },
+      "adoption": {
+        "score": 30.0,
+        "evidence": [
+          "No queries recorded in the last month (-40)",
+          "No unique users queried this asset (-30)"
+        ]
+      }
+    }
+  },
+  {
+    "urn": "urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.countries,PROD)",
+    "name": "countries",
+    "platform": "postgres",
+    "composite_score": 48.2,
+    "grade": "D",
+    "tier": "untrusted",
+    "assessed_at": "2026-08-05 15:08:11.303289",
+    "evidence_summary": "Dataset countries is graded D with a composite score of 48.2/100. Key remediation required in the following dimensions: provenance, integrity, lineage, adoption.",
+    "dimensions": {
+      "provenance": {
+        "score": 10.0,
+        "evidence": [
+          "No owners assigned (-30)",
+          "No dataset description (-25)",
+          "0/4 columns documented (-25)",
+          "1 glossary terms linked",
+          "Not assigned to any domain (-10)"
+        ]
+      },
+      "integrity": {
+        "score": 60.0,
+        "evidence": [
+          "No quality assertions defined (-40)",
+          "All health checks passing"
+        ]
+      },
+      "stability": {
+        "score": 85.0,
+        "evidence": [
+          "Schema has 4 fields",
+          "No primary keys defined (-15)",
+          "Subtypes: Table"
+        ]
+      },
+      "lineage": {
+        "score": 70.0,
+        "evidence": [
+          "No upstream sources found (-30)",
+          "41 downstream consumers",
+          "Consumed by 4 entity types: DATA_JOB, DASHBOARD, CHART, DATASET"
+        ]
+      },
+      "adoption": {
+        "score": 30.0,
+        "evidence": [
+          "No queries recorded in the last month (-40)",
+          "No unique users queried this asset (-30)"
+        ]
+      }
+    }
+  },
+  {
+    "urn": "urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.customers,PROD)",
+    "name": "customers",
+    "platform": "postgres",
+    "composite_score": 48.2,
+    "grade": "D",
+    "tier": "untrusted",
+    "assessed_at": "2026-08-05 15:08:11.812860",
+    "evidence_summary": "Dataset customers is graded D with a composite score of 48.2/100. Key remediation required in the following dimensions: provenance, integrity, lineage, adoption.",
+    "dimensions": {
+      "provenance": {
+        "score": 10.0,
+        "evidence": [
+          "No owners assigned (-30)",
+          "No dataset description (-25)",
+          "0/22 columns documented (-25)",
+          "1 glossary terms linked",
+          "Not assigned to any domain (-10)"
+        ]
+      },
+      "integrity": {
+        "score": 60.0,
+        "evidence": [
+          "No quality assertions defined (-40)",
+          "All health checks passing"
+        ]
+      },
+      "stability": {
+        "score": 85.0,
+        "evidence": [
+          "Schema has 22 fields",
+          "No primary keys defined (-15)",
+          "Subtypes: Table"
+        ]
+      },
+      "lineage": {
+        "score": 70.0,
+        "evidence": [
+          "No upstream sources found (-30)",
+          "41 downstream consumers",
+          "Consumed by 4 entity types: DATA_JOB, DASHBOARD, CHART, DATASET"
+        ]
+      },
+      "adoption": {
+        "score": 30.0,
+        "evidence": [
+          "No queries recorded in the last month (-40)",
+          "No unique users queried this asset (-30)"
+        ]
+      }
+    }
+  },
+  {
+    "urn": "urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.inventories,PROD)",
+    "name": "inventories",
+    "platform": "postgres",
+    "composite_score": 48.2,
+    "grade": "D",
+    "tier": "untrusted",
+    "assessed_at": "2026-08-05 15:08:12.239096",
+    "evidence_summary": "Dataset inventories is graded D with a composite score of 48.2/100. Key remediation required in the following dimensions: provenance, integrity, lineage, adoption.",
+    "dimensions": {
+      "provenance": {
+        "score": 10.0,
+        "evidence": [
+          "No owners assigned (-30)",
+          "No dataset description (-25)",
+          "0/6 columns documented (-25)",
+          "1 glossary terms linked",
+          "Not assigned to any domain (-10)"
+        ]
+      },
+      "integrity": {
+        "score": 60.0,
+        "evidence": [
+          "No quality assertions defined (-40)",
+          "All health checks passing"
+        ]
+      },
+      "stability": {
+        "score": 85.0,
+        "evidence": [
+          "Schema has 6 fields",
+          "No primary keys defined (-15)",
+          "Subtypes: Table"
+        ]
+      },
+      "lineage": {
+        "score": 70.0,
+        "evidence": [
+          "No upstream sources found (-30)",
+          "41 downstream consumers",
+          "Consumed by 4 entity types: DATA_JOB, DASHBOARD, CHART, DATASET"
+        ]
+      },
+      "adoption": {
+        "score": 30.0,
+        "evidence": [
+          "No queries recorded in the last month (-40)",
+          "No unique users queried this asset (-30)"
+        ]
+      }
+    }
+  },
+  {
+    "urn": "urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.order_items,PROD)",
+    "name": "order_items",
+    "platform": "postgres",
+    "composite_score": 48.2,
+    "grade": "D",
+    "tier": "untrusted",
+    "assessed_at": "2026-08-05 15:08:12.846720",
+    "evidence_summary": "Dataset order_items is graded D with a composite score of 48.2/100. Key remediation required in the following dimensions: provenance, integrity, lineage, adoption.",
+    "dimensions": {
+      "provenance": {
+        "score": 10.0,
+        "evidence": [
+          "No owners assigned (-30)",
+          "No dataset description (-25)",
+          "0/11 columns documented (-25)",
+          "1 glossary terms linked",
+          "Not assigned to any domain (-10)"
+        ]
+      },
+      "integrity": {
+        "score": 60.0,
+        "evidence": [
+          "No quality assertions defined (-40)",
+          "All health checks passing"
+        ]
+      },
+      "stability": {
+        "score": 85.0,
+        "evidence": [
+          "Schema has 11 fields",
+          "No primary keys defined (-15)",
+          "Subtypes: Table"
+        ]
+      },
+      "lineage": {
+        "score": 70.0,
+        "evidence": [
+          "No upstream sources found (-30)",
+          "41 downstream consumers",
+          "Consumed by 4 entity types: DATA_JOB, DASHBOARD, CHART, DATASET"
+        ]
+      },
+      "adoption": {
+        "score": 30.0,
+        "evidence": [
+          "No queries recorded in the last month (-40)",
+          "No unique users queried this asset (-30)"
+        ]
+      }
+    }
+  },
+  {
+    "urn": "urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.orders,PROD)",
+    "name": "orders",
+    "platform": "postgres",
+    "composite_score": 48.2,
+    "grade": "D",
+    "tier": "untrusted",
+    "assessed_at": "2026-08-05 15:08:13.251145",
+    "evidence_summary": "Dataset orders is graded D with a composite score of 48.2/100. Key remediation required in the following dimensions: provenance, integrity, lineage, adoption.",
+    "dimensions": {
+      "provenance": {
+        "score": 10.0,
+        "evidence": [
+          "No owners assigned (-30)",
+          "No dataset description (-25)",
+          "0/15 columns documented (-25)",
+          "2 glossary terms linked",
+          "Not assigned to any domain (-10)"
+        ]
+      },
+      "integrity": {
+        "score": 60.0,
+        "evidence": [
+          "No quality assertions defined (-40)",
+          "All health checks passing"
+        ]
+      },
+      "stability": {
+        "score": 85.0,
+        "evidence": [
+          "Schema has 15 fields",
+          "No primary keys defined (-15)",
+          "Subtypes: Table"
+        ]
+      },
+      "lineage": {
+        "score": 70.0,
+        "evidence": [
+          "No upstream sources found (-30)",
+          "41 downstream consumers",
+          "Consumed by 4 entity types: DATA_JOB, DASHBOARD, CHART, DATASET"
+        ]
+      },
+      "adoption": {
+        "score": 30.0,
+        "evidence": [
+          "No queries recorded in the last month (-40)",
+          "No unique users queried this asset (-30)"
+        ]
+      }
+    }
+  },
+  {
+    "urn": "urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.product_categories,PROD)",
+    "name": "product_categories",
+    "platform": "postgres",
+    "composite_score": 48.2,
+    "grade": "D",
+    "tier": "untrusted",
+    "assessed_at": "2026-08-05 15:08:13.789278",
+    "evidence_summary": "Dataset product_categories is graded D with a composite score of 48.2/100. Key remediation required in the following dimensions: provenance, integrity, lineage, adoption.",
+    "dimensions": {
+      "provenance": {
+        "score": 10.0,
+        "evidence": [
+          "No owners assigned (-30)",
+          "No dataset description (-25)",
+          "0/4 columns documented (-25)",
+          "1 glossary terms linked",
+          "Not assigned to any domain (-10)"
+        ]
+      },
+      "integrity": {
+        "score": 60.0,
+        "evidence": [
+          "No quality assertions defined (-40)",
+          "All health checks passing"
+        ]
+      },
+      "stability": {
+        "score": 85.0,
+        "evidence": [
+          "Schema has 4 fields",
+          "No primary keys defined (-15)",
+          "Subtypes: Table"
+        ]
+      },
+      "lineage": {
+        "score": 70.0,
+        "evidence": [
+          "No upstream sources found (-30)",
+          "41 downstream consumers",
+          "Consumed by 4 entity types: DATA_JOB, DASHBOARD, CHART, DATASET"
+        ]
+      },
+      "adoption": {
+        "score": 30.0,
+        "evidence": [
+          "No queries recorded in the last month (-40)",
+          "No unique users queried this asset (-30)"
+        ]
+      }
+    }
+  },
+  {
+    "urn": "urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.product_information,PROD)",
+    "name": "product_information",
+    "platform": "postgres",
+    "composite_score": 48.2,
+    "grade": "D",
+    "tier": "untrusted",
+    "assessed_at": "2026-08-05 15:08:14.196855",
+    "evidence_summary": "Dataset product_information is graded D with a composite score of 48.2/100. Key remediation required in the following dimensions: provenance, integrity, lineage, adoption.",
+    "dimensions": {
+      "provenance": {
+        "score": 10.0,
+        "evidence": [
+          "No owners assigned (-30)",
+          "No dataset description (-25)",
+          "0/5 columns documented (-25)",
+          "1 glossary terms linked",
+          "Not assigned to any domain (-10)"
+        ]
+      },
+      "integrity": {
+        "score": 60.0,
+        "evidence": [
+          "No quality assertions defined (-40)",
+          "All health checks passing"
+        ]
+      },
+      "stability": {
+        "score": 85.0,
+        "evidence": [
+          "Schema has 5 fields",
+          "No primary keys defined (-15)",
+          "Subtypes: Table"
+        ]
+      },
+      "lineage": {
+        "score": 70.0,
+        "evidence": [
+          "No upstream sources found (-30)",
+          "41 downstream consumers",
+          "Consumed by 4 entity types: DATA_JOB, DASHBOARD, CHART, DATASET"
+        ]
+      },
+      "adoption": {
+        "score": 30.0,
+        "evidence": [
+          "No queries recorded in the last month (-40)",
+          "No unique users queried this asset (-30)"
+        ]
+      }
+    }
+  },
+  {
+    "urn": "urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.products,PROD)",
+    "name": "products",
+    "platform": "postgres",
+    "composite_score": 48.2,
+    "grade": "D",
+    "tier": "untrusted",
+    "assessed_at": "2026-08-05 15:08:14.816193",
+    "evidence_summary": "Dataset products is graded D with a composite score of 48.2/100. Key remediation required in the following dimensions: provenance, integrity, lineage, adoption.",
+    "dimensions": {
+      "provenance": {
+        "score": 10.0,
+        "evidence": [
+          "No owners assigned (-30)",
+          "No dataset description (-25)",
+          "0/12 columns documented (-25)",
+          "1 glossary terms linked",
+          "Not assigned to any domain (-10)"
+        ]
+      },
+      "integrity": {
+        "score": 60.0,
+        "evidence": [
+          "No quality assertions defined (-40)",
+          "All health checks passing"
+        ]
+      },
+      "stability": {
+        "score": 85.0,
+        "evidence": [
+          "Schema has 12 fields",
+          "No primary keys defined (-15)",
+          "Subtypes: Table"
+        ]
+      },
+      "lineage": {
+        "score": 70.0,
+        "evidence": [
+          "No upstream sources found (-30)",
+          "41 downstream consumers",
+          "Consumed by 4 entity types: DATA_JOB, DASHBOARD, CHART, DATASET"
+        ]
+      },
+      "adoption": {
+        "score": 30.0,
+        "evidence": [
+          "No queries recorded in the last month (-40)",
+          "No unique users queried this asset (-30)"
+        ]
+      }
+    }
+  },
+  {
+    "urn": "urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.promotions,PROD)",
+    "name": "promotions",
+    "platform": "postgres",
+    "composite_score": 48.2,
+    "grade": "D",
+    "tier": "untrusted",
+    "assessed_at": "2026-08-05 15:08:15.235667",
+    "evidence_summary": "Dataset promotions is graded D with a composite score of 48.2/100. Key remediation required in the following dimensions: provenance, integrity, lineage, adoption.",
+    "dimensions": {
+      "provenance": {
+        "score": 10.0,
+        "evidence": [
+          "No owners assigned (-30)",
+          "No dataset description (-25)",
+          "0/6 columns documented (-25)",
+          "1 glossary terms linked",
+          "Not assigned to any domain (-10)"
+        ]
+      },
+      "integrity": {
+        "score": 60.0,
+        "evidence": [
+          "No quality assertions defined (-40)",
+          "All health checks passing"
+        ]
+      },
+      "stability": {
+        "score": 85.0,
+        "evidence": [
+          "Schema has 6 fields",
+          "No primary keys defined (-15)",
+          "Subtypes: Table"
+        ]
+      },
+      "lineage": {
+        "score": 70.0,
+        "evidence": [
+          "No upstream sources found (-30)",
+          "41 downstream consumers",
+          "Consumed by 4 entity types: DATA_JOB, DASHBOARD, CHART, DATASET"
+        ]
+      },
+      "adoption": {
+        "score": 30.0,
+        "evidence": [
+          "No queries recorded in the last month (-40)",
+          "No unique users queried this asset (-30)"
+        ]
+      }
+    }
+  },
+  {
+    "urn": "urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.regions,PROD)",
+    "name": "regions",
+    "platform": "postgres",
+    "composite_score": 48.2,
+    "grade": "D",
+    "tier": "untrusted",
+    "assessed_at": "2026-08-05 15:08:15.767769",
+    "evidence_summary": "Dataset regions is graded D with a composite score of 48.2/100. Key remediation required in the following dimensions: provenance, integrity, lineage, adoption.",
+    "dimensions": {
+      "provenance": {
+        "score": 10.0,
+        "evidence": [
+          "No owners assigned (-30)",
+          "No dataset description (-25)",
+          "0/4 columns documented (-25)",
+          "1 glossary terms linked",
+          "Not assigned to any domain (-10)"
+        ]
+      },
+      "integrity": {
+        "score": 60.0,
+        "evidence": [
+          "No quality assertions defined (-40)",
+          "All health checks passing"
+        ]
+      },
+      "stability": {
+        "score": 85.0,
+        "evidence": [
+          "Schema has 4 fields",
+          "No primary keys defined (-15)",
+          "Subtypes: Table"
+        ]
+      },
+      "lineage": {
+        "score": 70.0,
+        "evidence": [
+          "No upstream sources found (-30)",
+          "41 downstream consumers",
+          "Consumed by 4 entity types: DATA_JOB, DASHBOARD, CHART, DATASET"
+        ]
+      },
+      "adoption": {
+        "score": 30.0,
+        "evidence": [
+          "No queries recorded in the last month (-40)",
+          "No unique users queried this asset (-30)"
+        ]
+      }
+    }
+  },
+  {
+    "urn": "urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.warehouses,PROD)",
+    "name": "warehouses",
+    "platform": "postgres",
+    "composite_score": 48.2,
+    "grade": "D",
+    "tier": "untrusted",
+    "assessed_at": "2026-08-05 15:08:16.188310",
+    "evidence_summary": "Dataset warehouses is graded D with a composite score of 48.2/100. Key remediation required in the following dimensions: provenance, integrity, lineage, adoption.",
+    "dimensions": {
+      "provenance": {
+        "score": 10.0,
+        "evidence": [
+          "No owners assigned (-30)",
+          "No dataset description (-25)",
+          "0/4 columns documented (-25)",
+          "1 glossary terms linked",
+          "Not assigned to any domain (-10)"
+        ]
+      },
+      "integrity": {
+        "score": 60.0,
+        "evidence": [
+          "No quality assertions defined (-40)",
+          "All health checks passing"
+        ]
+      },
+      "stability": {
+        "score": 85.0,
+        "evidence": [
+          "Schema has 4 fields",
+          "No primary keys defined (-15)",
+          "Subtypes: Table"
+        ]
+      },
+      "lineage": {
+        "score": 70.0,
+        "evidence": [
+          "No upstream sources found (-30)",
+          "41 downstream consumers",
+          "Consumed by 4 entity types: DATA_JOB, DASHBOARD, CHART, DATASET"
+        ]
+      },
+      "adoption": {
+        "score": 30.0,
+        "evidence": [
+          "No queries recorded in the last month (-40)",
+          "No unique users queried this asset (-30)"
+        ]
+      }
+    }
+  },
+  {
+    "urn": "urn:li:dataset:(urn:li:dataPlatform:powerbi,b2fd91.datahub_order_entries.Customer_Analytics_Measures,PROD)",
+    "name": "Customer Analytics Measures",
+    "platform": "powerbi",
+    "composite_score": 55.4,
+    "grade": "C-",
+    "tier": "review",
+    "assessed_at": "2026-08-05 15:08:16.731328",
+    "evidence_summary": "Dataset Customer Analytics Measures is graded C- with a composite score of 57.8/100. Key remediation required in the following dimensions: provenance, integrity, adoption.",
+    "dimensions": {
+      "provenance": {
+        "score": 30.0,
+        "evidence": [
+          "No owners assigned (-30)",
+          "No dataset description (-25)",
+          "1/2 columns documented (-5)",
+          "1 glossary terms linked",
+          "Not assigned to any domain (-10)"
+        ]
+      },
+      "integrity": {
+        "score": 60.0,
+        "evidence": [
+          "No quality assertions defined (-40)",
+          "All health checks passing"
+        ]
+      },
+      "stability": {
+        "score": 85.0,
+        "evidence": [
+          "Schema has 2 fields",
+          "No primary keys defined (-15)",
+          "Subtypes: Table"
+        ]
+      },
+      "lineage": {
+        "score": 84.5,
+        "evidence": [
+          "71 upstream sources",
+          "5 downstream consumers",
+          "Consumed by 2 entity types: DASHBOARD, CHART",
+          "Lineage risk cascade penalty: -15.5 (inherited from untrusted upstream source: urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.addresses,PROD))"
+        ]
+      },
+      "adoption": {
+        "score": 30.0,
+        "evidence": [
+          "No queries recorded in the last month (-40)",
+          "No unique users queried this asset (-30)"
+        ]
+      }
+    }
+  },
+  {
+    "urn": "urn:li:dataset:(urn:li:dataPlatform:powerbi,b2fd91.datahub_order_entries.Essential_KPI_Measures,PROD)",
+    "name": "Essential KPI Measures",
+    "platform": "powerbi",
+    "composite_score": 56.7,
+    "grade": "C-",
+    "tier": "review",
+    "assessed_at": "2026-08-05 15:08:17.130803",
+    "evidence_summary": "Dataset Essential KPI Measures is graded C- with a composite score of 59.0/100. Key remediation required in the following dimensions: provenance, integrity, adoption.",
+    "dimensions": {
+      "provenance": {
+        "score": 35.0,
+        "evidence": [
+          "No owners assigned (-30)",
+          "No dataset description (-25)",
+          "11/12 columns documented",
+          "1 glossary terms linked",
+          "Not assigned to any domain (-10)"
+        ]
+      },
+      "integrity": {
+        "score": 60.0,
+        "evidence": [
+          "No quality assertions defined (-40)",
+          "All health checks passing"
+        ]
+      },
+      "stability": {
+        "score": 85.0,
+        "evidence": [
+          "Schema has 12 fields",
+          "No primary keys defined (-15)",
+          "Subtypes: Table"
+        ]
+      },
+      "lineage": {
+        "score": 84.5,
+        "evidence": [
+          "71 upstream sources",
+          "5 downstream consumers",
+          "Consumed by 2 entity types: DASHBOARD, CHART",
+          "Lineage risk cascade penalty: -15.5 (inherited from untrusted upstream source: urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.addresses,PROD))"
+        ]
+      },
+      "adoption": {
+        "score": 30.0,
+        "evidence": [
+          "No queries recorded in the last month (-40)",
+          "No unique users queried this asset (-30)"
+        ]
+      }
+    }
+  },
+  {
+    "urn": "urn:li:dataset:(urn:li:dataPlatform:powerbi,b2fd91.datahub_order_entries.Geographic_Measures,PROD)",
+    "name": "Geographic Measures",
+    "platform": "powerbi",
+    "composite_score": 55.4,
+    "grade": "C-",
+    "tier": "review",
+    "assessed_at": "2026-08-05 15:08:17.696660",
+    "evidence_summary": "Dataset Geographic Measures is graded C- with a composite score of 57.8/100. Key remediation required in the following dimensions: provenance, integrity, adoption.",
+    "dimensions": {
+      "provenance": {
+        "score": 30.0,
+        "evidence": [
+          "No owners assigned (-30)",
+          "No dataset description (-25)",
+          "3/4 columns documented (-5)",
+          "1 glossary terms linked",
+          "Not assigned to any domain (-10)"
+        ]
+      },
+      "integrity": {
+        "score": 60.0,
+        "evidence": [
+          "No quality assertions defined (-40)",
+          "All health checks passing"
+        ]
+      },
+      "stability": {
+        "score": 85.0,
+        "evidence": [
+          "Schema has 4 fields",
+          "No primary keys defined (-15)",
+          "Subtypes: Table"
+        ]
+      },
+      "lineage": {
+        "score": 84.5,
+        "evidence": [
+          "71 upstream sources",
+          "5 downstream consumers",
+          "Consumed by 2 entity types: DASHBOARD, CHART",
+          "Lineage risk cascade penalty: -15.5 (inherited from untrusted upstream source: urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.addresses,PROD))"
+        ]
+      },
+      "adoption": {
+        "score": 30.0,
+        "evidence": [
+          "No queries recorded in the last month (-40)",
+          "No unique users queried this asset (-30)"
+        ]
+      }
+    }
+  },
+  {
+    "urn": "urn:li:dataset:(urn:li:dataPlatform:powerbi,b2fd91.datahub_order_entries.Product_Perfromance_Measures,PROD)",
+    "name": "Product Perfromance Measures",
+    "platform": "powerbi",
+    "composite_score": 56.7,
+    "grade": "C-",
+    "tier": "review",
+    "assessed_at": "2026-08-05 15:08:18.082855",
+    "evidence_summary": "Dataset Product Perfromance Measures is graded C- with a composite score of 59.0/100. Key remediation required in the following dimensions: provenance, integrity, adoption.",
+    "dimensions": {
+      "provenance": {
+        "score": 35.0,
+        "evidence": [
+          "No owners assigned (-30)",
+          "No dataset description (-25)",
+          "4/5 columns documented",
+          "1 glossary terms linked",
+          "Not assigned to any domain (-10)"
+        ]
+      },
+      "integrity": {
+        "score": 60.0,
+        "evidence": [
+          "No quality assertions defined (-40)",
+          "All health checks passing"
+        ]
+      },
+      "stability": {
+        "score": 85.0,
+        "evidence": [
+          "Schema has 5 fields",
+          "No primary keys defined (-15)",
+          "Subtypes: Table"
+        ]
+      },
+      "lineage": {
+        "score": 84.5,
+        "evidence": [
+          "71 upstream sources",
+          "5 downstream consumers",
+          "Consumed by 2 entity types: DASHBOARD, CHART",
+          "Lineage risk cascade penalty: -15.5 (inherited from untrusted upstream source: urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.addresses,PROD))"
+        ]
+      },
+      "adoption": {
+        "score": 30.0,
+        "evidence": [
+          "No queries recorded in the last month (-40)",
+          "No unique users queried this asset (-30)"
+        ]
+      }
+    }
+  },
+  {
+    "urn": "urn:li:dataset:(urn:li:dataPlatform:powerbi,b2fd91.datahub_order_entries.Time_Inteligence_Measures,PROD)",
+    "name": "Time Inteligence Measures",
+    "platform": "powerbi",
+    "composite_score": 56.7,
+    "grade": "C-",
+    "tier": "review",
+    "assessed_at": "2026-08-05 15:08:18.735531",
+    "evidence_summary": "Dataset Time Inteligence Measures is graded C- with a composite score of 59.0/100. Key remediation required in the following dimensions: provenance, integrity, adoption.",
+    "dimensions": {
+      "provenance": {
+        "score": 35.0,
+        "evidence": [
+          "No owners assigned (-30)",
+          "No dataset description (-25)",
+          "4/5 columns documented",
+          "1 glossary terms linked",
+          "Not assigned to any domain (-10)"
+        ]
+      },
+      "integrity": {
+        "score": 60.0,
+        "evidence": [
+          "No quality assertions defined (-40)",
+          "All health checks passing"
+        ]
+      },
+      "stability": {
+        "score": 85.0,
+        "evidence": [
+          "Schema has 5 fields",
+          "No primary keys defined (-15)",
+          "Subtypes: Table"
+        ]
+      },
+      "lineage": {
+        "score": 84.5,
+        "evidence": [
+          "71 upstream sources",
+          "5 downstream consumers",
+          "Consumed by 2 entity types: DASHBOARD, CHART",
+          "Lineage risk cascade penalty: -15.5 (inherited from untrusted upstream source: urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.addresses,PROD))"
+        ]
+      },
+      "adoption": {
+        "score": 30.0,
+        "evidence": [
+          "No queries recorded in the last month (-40)",
+          "No unique users queried this asset (-30)"
+        ]
+      }
+    }
+  },
+  {
+    "urn": "urn:li:dataset:(urn:li:dataPlatform:s3,b2fd91.demo-data-bucket/order_entry/addresses,PROD)",
+    "name": "addresses",
+    "platform": "s3",
+    "composite_score": 50.4,
+    "grade": "D",
+    "tier": "untrusted",
+    "assessed_at": "2026-08-05 15:08:19.145632",
+    "evidence_summary": "Dataset addresses is graded D with a composite score of 52.8/100. Key remediation required in the following dimensions: provenance, integrity, adoption.",
+    "dimensions": {
+      "provenance": {
+        "score": 10.0,
+        "evidence": [
+          "No owners assigned (-30)",
+          "No dataset description (-25)",
+          "0/9 columns documented (-25)",
+          "1 glossary terms linked",
+          "Not assigned to any domain (-10)"
+        ]
+      },
+      "integrity": {
+        "score": 60.0,
+        "evidence": [
+          "No quality assertions defined (-40)",
+          "All health checks passing"
+        ]
+      },
+      "stability": {
+        "score": 85.0,
+        "evidence": [
+          "Schema has 9 fields",
+          "No primary keys defined (-15)"
+        ]
+      },
+      "lineage": {
+        "score": 84.5,
+        "evidence": [
+          "2 upstream sources",
+          "39 downstream consumers",
+          "Consumed by 4 entity types: DATA_JOB, DASHBOARD, CHART, DATASET",
+          "Lineage risk cascade penalty: -15.5 (inherited from untrusted upstream source: urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.addresses,PROD))"
+        ]
+      },
+      "adoption": {
+        "score": 30.0,
+        "evidence": [
+          "No queries recorded in the last month (-40)",
+          "No unique users queried this asset (-30)"
+        ]
+      }
+    }
+  },
+  {
+    "urn": "urn:li:dataset:(urn:li:dataPlatform:s3,b2fd91.demo-data-bucket/order_entry/countries,PROD)",
+    "name": "countries",
+    "platform": "s3",
+    "composite_score": 50.4,
+    "grade": "D",
+    "tier": "untrusted",
+    "assessed_at": "2026-08-05 15:08:19.755354",
+    "evidence_summary": "Dataset countries is graded D with a composite score of 52.8/100. Key remediation required in the following dimensions: provenance, integrity, adoption.",
+    "dimensions": {
+      "provenance": {
+        "score": 10.0,
+        "evidence": [
+          "No owners assigned (-30)",
+          "No dataset description (-25)",
+          "0/4 columns documented (-25)",
+          "1 glossary terms linked",
+          "Not assigned to any domain (-10)"
+        ]
+      },
+      "integrity": {
+        "score": 60.0,
+        "evidence": [
+          "No quality assertions defined (-40)",
+          "All health checks passing"
+        ]
+      },
+      "stability": {
+        "score": 85.0,
+        "evidence": [
+          "Schema has 4 fields",
+          "No primary keys defined (-15)"
+        ]
+      },
+      "lineage": {
+        "score": 84.5,
+        "evidence": [
+          "2 upstream sources",
+          "39 downstream consumers",
+          "Consumed by 4 entity types: DATA_JOB, DASHBOARD, CHART, DATASET",
+          "Lineage risk cascade penalty: -15.5 (inherited from untrusted upstream source: urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.countries,PROD))"
+        ]
+      },
+      "adoption": {
+        "score": 30.0,
+        "evidence": [
+          "No queries recorded in the last month (-40)",
+          "No unique users queried this asset (-30)"
+        ]
+      }
+    }
+  },
+  {
+    "urn": "urn:li:dataset:(urn:li:dataPlatform:s3,b2fd91.demo-data-bucket/order_entry/customers,PROD)",
+    "name": "customers",
+    "platform": "s3",
+    "composite_score": 50.4,
+    "grade": "D",
+    "tier": "untrusted",
+    "assessed_at": "2026-08-05 15:08:20.156689",
+    "evidence_summary": "Dataset customers is graded D with a composite score of 52.8/100. Key remediation required in the following dimensions: provenance, integrity, adoption.",
+    "dimensions": {
+      "provenance": {
+        "score": 10.0,
+        "evidence": [
+          "No owners assigned (-30)",
+          "No dataset description (-25)",
+          "0/22 columns documented (-25)",
+          "1 glossary terms linked",
+          "Not assigned to any domain (-10)"
+        ]
+      },
+      "integrity": {
+        "score": 60.0,
+        "evidence": [
+          "No quality assertions defined (-40)",
+          "All health checks passing"
+        ]
+      },
+      "stability": {
+        "score": 85.0,
+        "evidence": [
+          "Schema has 22 fields",
+          "No primary keys defined (-15)"
+        ]
+      },
+      "lineage": {
+        "score": 84.5,
+        "evidence": [
+          "2 upstream sources",
+          "39 downstream consumers",
+          "Consumed by 4 entity types: DATA_JOB, DASHBOARD, CHART, DATASET",
+          "Lineage risk cascade penalty: -15.5 (inherited from untrusted upstream source: urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.customers,PROD))"
+        ]
+      },
+      "adoption": {
+        "score": 30.0,
+        "evidence": [
+          "No queries recorded in the last month (-40)",
+          "No unique users queried this asset (-30)"
+        ]
+      }
+    }
+  },
+  {
+    "urn": "urn:li:dataset:(urn:li:dataPlatform:s3,b2fd91.demo-data-bucket/order_entry/inventories,PROD)",
+    "name": "inventories",
+    "platform": "s3",
+    "composite_score": 50.4,
+    "grade": "D",
+    "tier": "untrusted",
+    "assessed_at": "2026-08-05 15:08:20.694745",
+    "evidence_summary": "Dataset inventories is graded D with a composite score of 52.8/100. Key remediation required in the following dimensions: provenance, integrity, adoption.",
+    "dimensions": {
+      "provenance": {
+        "score": 10.0,
+        "evidence": [
+          "No owners assigned (-30)",
+          "No dataset description (-25)",
+          "0/6 columns documented (-25)",
+          "1 glossary terms linked",
+          "Not assigned to any domain (-10)"
+        ]
+      },
+      "integrity": {
+        "score": 60.0,
+        "evidence": [
+          "No quality assertions defined (-40)",
+          "All health checks passing"
+        ]
+      },
+      "stability": {
+        "score": 85.0,
+        "evidence": [
+          "Schema has 6 fields",
+          "No primary keys defined (-15)"
+        ]
+      },
+      "lineage": {
+        "score": 84.5,
+        "evidence": [
+          "2 upstream sources",
+          "39 downstream consumers",
+          "Consumed by 4 entity types: DATA_JOB, DASHBOARD, CHART, DATASET",
+          "Lineage risk cascade penalty: -15.5 (inherited from untrusted upstream source: urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.inventories,PROD))"
+        ]
+      },
+      "adoption": {
+        "score": 30.0,
+        "evidence": [
+          "No queries recorded in the last month (-40)",
+          "No unique users queried this asset (-30)"
+        ]
+      }
+    }
+  },
+  {
+    "urn": "urn:li:dataset:(urn:li:dataPlatform:s3,b2fd91.demo-data-bucket/order_entry/order_items,PROD)",
+    "name": "order_items",
+    "platform": "s3",
+    "composite_score": 50.4,
+    "grade": "D",
+    "tier": "untrusted",
+    "assessed_at": "2026-08-05 15:08:21.108641",
+    "evidence_summary": "Dataset order_items is graded D with a composite score of 52.8/100. Key remediation required in the following dimensions: provenance, integrity, adoption.",
+    "dimensions": {
+      "provenance": {
+        "score": 10.0,
+        "evidence": [
+          "No owners assigned (-30)",
+          "No dataset description (-25)",
+          "0/11 columns documented (-25)",
+          "1 glossary terms linked",
+          "Not assigned to any domain (-10)"
+        ]
+      },
+      "integrity": {
+        "score": 60.0,
+        "evidence": [
+          "No quality assertions defined (-40)",
+          "All health checks passing"
+        ]
+      },
+      "stability": {
+        "score": 85.0,
+        "evidence": [
+          "Schema has 11 fields",
+          "No primary keys defined (-15)"
+        ]
+      },
+      "lineage": {
+        "score": 84.5,
+        "evidence": [
+          "2 upstream sources",
+          "39 downstream consumers",
+          "Consumed by 4 entity types: DATA_JOB, DASHBOARD, CHART, DATASET",
+          "Lineage risk cascade penalty: -15.5 (inherited from untrusted upstream source: urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.order_items,PROD))"
+        ]
+      },
+      "adoption": {
+        "score": 30.0,
+        "evidence": [
+          "No queries recorded in the last month (-40)",
+          "No unique users queried this asset (-30)"
+        ]
+      }
+    }
+  },
+  {
+    "urn": "urn:li:dataset:(urn:li:dataPlatform:s3,b2fd91.demo-data-bucket/order_entry/orders,PROD)",
+    "name": "orders",
+    "platform": "s3",
+    "composite_score": 50.4,
+    "grade": "D",
+    "tier": "untrusted",
+    "assessed_at": "2026-08-05 15:08:21.668524",
+    "evidence_summary": "Dataset orders is graded D with a composite score of 52.8/100. Key remediation required in the following dimensions: provenance, integrity, adoption.",
+    "dimensions": {
+      "provenance": {
+        "score": 10.0,
+        "evidence": [
+          "No owners assigned (-30)",
+          "No dataset description (-25)",
+          "0/15 columns documented (-25)",
+          "2 glossary terms linked",
+          "Not assigned to any domain (-10)"
+        ]
+      },
+      "integrity": {
+        "score": 60.0,
+        "evidence": [
+          "No quality assertions defined (-40)",
+          "All health checks passing"
+        ]
+      },
+      "stability": {
+        "score": 85.0,
+        "evidence": [
+          "Schema has 15 fields",
+          "No primary keys defined (-15)"
+        ]
+      },
+      "lineage": {
+        "score": 84.5,
+        "evidence": [
+          "2 upstream sources",
+          "39 downstream consumers",
+          "Consumed by 4 entity types: DATA_JOB, DASHBOARD, CHART, DATASET",
+          "Lineage risk cascade penalty: -15.5 (inherited from untrusted upstream source: urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.orders,PROD))"
+        ]
+      },
+      "adoption": {
+        "score": 30.0,
+        "evidence": [
+          "No queries recorded in the last month (-40)",
+          "No unique users queried this asset (-30)"
+        ]
+      }
+    }
+  },
+  {
+    "urn": "urn:li:dataset:(urn:li:dataPlatform:s3,b2fd91.demo-data-bucket/order_entry/product_categories,PROD)",
+    "name": "product_categories",
+    "platform": "s3",
+    "composite_score": 50.4,
+    "grade": "D",
+    "tier": "untrusted",
+    "assessed_at": "2026-08-05 15:08:22.110158",
+    "evidence_summary": "Dataset product_categories is graded D with a composite score of 52.8/100. Key remediation required in the following dimensions: provenance, integrity, adoption.",
+    "dimensions": {
+      "provenance": {
+        "score": 10.0,
+        "evidence": [
+          "No owners assigned (-30)",
+          "No dataset description (-25)",
+          "0/4 columns documented (-25)",
+          "1 glossary terms linked",
+          "Not assigned to any domain (-10)"
+        ]
+      },
+      "integrity": {
+        "score": 60.0,
+        "evidence": [
+          "No quality assertions defined (-40)",
+          "All health checks passing"
+        ]
+      },
+      "stability": {
+        "score": 85.0,
+        "evidence": [
+          "Schema has 4 fields",
+          "No primary keys defined (-15)"
+        ]
+      },
+      "lineage": {
+        "score": 84.5,
+        "evidence": [
+          "2 upstream sources",
+          "39 downstream consumers",
+          "Consumed by 4 entity types: DATA_JOB, DASHBOARD, CHART, DATASET",
+          "Lineage risk cascade penalty: -15.5 (inherited from untrusted upstream source: urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.product_categories,PROD))"
+        ]
+      },
+      "adoption": {
+        "score": 30.0,
+        "evidence": [
+          "No queries recorded in the last month (-40)",
+          "No unique users queried this asset (-30)"
+        ]
+      }
+    }
+  },
+  {
+    "urn": "urn:li:dataset:(urn:li:dataPlatform:s3,b2fd91.demo-data-bucket/order_entry/product_information,PROD)",
+    "name": "product_information",
+    "platform": "s3",
+    "composite_score": 50.4,
+    "grade": "D",
+    "tier": "untrusted",
+    "assessed_at": "2026-08-05 15:08:22.622625",
+    "evidence_summary": "Dataset product_information is graded D with a composite score of 52.8/100. Key remediation required in the following dimensions: provenance, integrity, adoption.",
+    "dimensions": {
+      "provenance": {
+        "score": 10.0,
+        "evidence": [
+          "No owners assigned (-30)",
+          "No dataset description (-25)",
+          "0/5 columns documented (-25)",
+          "1 glossary terms linked",
+          "Not assigned to any domain (-10)"
+        ]
+      },
+      "integrity": {
+        "score": 60.0,
+        "evidence": [
+          "No quality assertions defined (-40)",
+          "All health checks passing"
+        ]
+      },
+      "stability": {
+        "score": 85.0,
+        "evidence": [
+          "Schema has 5 fields",
+          "No primary keys defined (-15)"
+        ]
+      },
+      "lineage": {
+        "score": 84.5,
+        "evidence": [
+          "2 upstream sources",
+          "39 downstream consumers",
+          "Consumed by 4 entity types: DATA_JOB, DASHBOARD, CHART, DATASET",
+          "Lineage risk cascade penalty: -15.5 (inherited from untrusted upstream source: urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.product_information,PROD))"
+        ]
+      },
+      "adoption": {
+        "score": 30.0,
+        "evidence": [
+          "No queries recorded in the last month (-40)",
+          "No unique users queried this asset (-30)"
+        ]
+      }
+    }
+  },
+  {
+    "urn": "urn:li:dataset:(urn:li:dataPlatform:s3,b2fd91.demo-data-bucket/order_entry/products,PROD)",
+    "name": "products",
+    "platform": "s3",
+    "composite_score": 50.4,
+    "grade": "D",
+    "tier": "untrusted",
+    "assessed_at": "2026-08-05 15:08:23.069860",
+    "evidence_summary": "Dataset products is graded D with a composite score of 52.8/100. Key remediation required in the following dimensions: provenance, integrity, adoption.",
+    "dimensions": {
+      "provenance": {
+        "score": 10.0,
+        "evidence": [
+          "No owners assigned (-30)",
+          "No dataset description (-25)",
+          "0/12 columns documented (-25)",
+          "1 glossary terms linked",
+          "Not assigned to any domain (-10)"
+        ]
+      },
+      "integrity": {
+        "score": 60.0,
+        "evidence": [
+          "No quality assertions defined (-40)",
+          "All health checks passing"
+        ]
+      },
+      "stability": {
+        "score": 85.0,
+        "evidence": [
+          "Schema has 12 fields",
+          "No primary keys defined (-15)"
+        ]
+      },
+      "lineage": {
+        "score": 84.5,
+        "evidence": [
+          "2 upstream sources",
+          "39 downstream consumers",
+          "Consumed by 4 entity types: DATA_JOB, DASHBOARD, CHART, DATASET",
+          "Lineage risk cascade penalty: -15.5 (inherited from untrusted upstream source: urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.products,PROD))"
+        ]
+      },
+      "adoption": {
+        "score": 30.0,
+        "evidence": [
+          "No queries recorded in the last month (-40)",
+          "No unique users queried this asset (-30)"
+        ]
+      }
+    }
+  },
+  {
+    "urn": "urn:li:dataset:(urn:li:dataPlatform:s3,b2fd91.demo-data-bucket/order_entry/promotions,PROD)",
+    "name": "promotions",
+    "platform": "s3",
+    "composite_score": 50.4,
+    "grade": "D",
+    "tier": "untrusted",
+    "assessed_at": "2026-08-05 15:08:23.555633",
+    "evidence_summary": "Dataset promotions is graded D with a composite score of 52.8/100. Key remediation required in the following dimensions: provenance, integrity, adoption.",
+    "dimensions": {
+      "provenance": {
+        "score": 10.0,
+        "evidence": [
+          "No owners assigned (-30)",
+          "No dataset description (-25)",
+          "0/6 columns documented (-25)",
+          "1 glossary terms linked",
+          "Not assigned to any domain (-10)"
+        ]
+      },
+      "integrity": {
+        "score": 60.0,
+        "evidence": [
+          "No quality assertions defined (-40)",
+          "All health checks passing"
+        ]
+      },
+      "stability": {
+        "score": 85.0,
+        "evidence": [
+          "Schema has 6 fields",
+          "No primary keys defined (-15)"
+        ]
+      },
+      "lineage": {
+        "score": 84.5,
+        "evidence": [
+          "2 upstream sources",
+          "39 downstream consumers",
+          "Consumed by 4 entity types: DATA_JOB, DASHBOARD, CHART, DATASET",
+          "Lineage risk cascade penalty: -15.5 (inherited from untrusted upstream source: urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.promotions,PROD))"
+        ]
+      },
+      "adoption": {
+        "score": 30.0,
+        "evidence": [
+          "No queries recorded in the last month (-40)",
+          "No unique users queried this asset (-30)"
+        ]
+      }
+    }
+  },
+  {
+    "urn": "urn:li:dataset:(urn:li:dataPlatform:s3,b2fd91.demo-data-bucket/order_entry/regions,PROD)",
+    "name": "regions",
+    "platform": "s3",
+    "composite_score": 50.4,
+    "grade": "D",
+    "tier": "untrusted",
+    "assessed_at": "2026-08-05 15:08:24.008971",
+    "evidence_summary": "Dataset regions is graded D with a composite score of 52.8/100. Key remediation required in the following dimensions: provenance, integrity, adoption.",
+    "dimensions": {
+      "provenance": {
+        "score": 10.0,
+        "evidence": [
+          "No owners assigned (-30)",
+          "No dataset description (-25)",
+          "0/4 columns documented (-25)",
+          "1 glossary terms linked",
+          "Not assigned to any domain (-10)"
+        ]
+      },
+      "integrity": {
+        "score": 60.0,
+        "evidence": [
+          "No quality assertions defined (-40)",
+          "All health checks passing"
+        ]
+      },
+      "stability": {
+        "score": 85.0,
+        "evidence": [
+          "Schema has 4 fields",
+          "No primary keys defined (-15)"
+        ]
+      },
+      "lineage": {
+        "score": 84.5,
+        "evidence": [
+          "2 upstream sources",
+          "39 downstream consumers",
+          "Consumed by 4 entity types: DATA_JOB, DASHBOARD, CHART, DATASET",
+          "Lineage risk cascade penalty: -15.5 (inherited from untrusted upstream source: urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.regions,PROD))"
+        ]
+      },
+      "adoption": {
+        "score": 30.0,
+        "evidence": [
+          "No queries recorded in the last month (-40)",
+          "No unique users queried this asset (-30)"
+        ]
+      }
+    }
+  },
+  {
+    "urn": "urn:li:dataset:(urn:li:dataPlatform:s3,b2fd91.demo-data-bucket/order_entry/warehouses,PROD)",
+    "name": "warehouses",
+    "platform": "s3",
+    "composite_score": 50.4,
+    "grade": "D",
+    "tier": "untrusted",
+    "assessed_at": "2026-08-05 15:08:24.606661",
+    "evidence_summary": "Dataset warehouses is graded D with a composite score of 52.8/100. Key remediation required in the following dimensions: provenance, integrity, adoption.",
+    "dimensions": {
+      "provenance": {
+        "score": 10.0,
+        "evidence": [
+          "No owners assigned (-30)",
+          "No dataset description (-25)",
+          "0/4 columns documented (-25)",
+          "1 glossary terms linked",
+          "Not assigned to any domain (-10)"
+        ]
+      },
+      "integrity": {
+        "score": 60.0,
+        "evidence": [
+          "No quality assertions defined (-40)",
+          "All health checks passing"
+        ]
+      },
+      "stability": {
+        "score": 85.0,
+        "evidence": [
+          "Schema has 4 fields",
+          "No primary keys defined (-15)"
+        ]
+      },
+      "lineage": {
+        "score": 84.5,
+        "evidence": [
+          "2 upstream sources",
+          "39 downstream consumers",
+          "Consumed by 4 entity types: DATA_JOB, DASHBOARD, CHART, DATASET",
+          "Lineage risk cascade penalty: -15.5 (inherited from untrusted upstream source: urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.warehouses,PROD))"
+        ]
+      },
+      "adoption": {
+        "score": 30.0,
+        "evidence": [
+          "No queries recorded in the last month (-40)",
+          "No unique users queried this asset (-30)"
+        ]
+      }
+    }
+  },
+  {
+    "urn": "urn:li:dataset:(urn:li:dataPlatform:snowflake,b2fd91.order_entry_db.analytics.order_history,PROD)",
+    "name": "ORDER_HISTORY",
+    "platform": "snowflake",
+    "composite_score": 45.9,
+    "grade": "D",
+    "tier": "untrusted",
+    "assessed_at": "2026-08-05 15:08:25.077854",
+    "evidence_summary": "Dataset ORDER_HISTORY is graded D with a composite score of 48.2/100. Key remediation required in the following dimensions: provenance, integrity, lineage, adoption.",
+    "dimensions": {
+      "provenance": {
+        "score": 10.0,
+        "evidence": [
+          "No owners assigned (-30)",
+          "No dataset description (-25)",
+          "0/5 columns documented (-25)",
+          "1 glossary terms linked",
+          "Not assigned to any domain (-10)"
+        ]
+      },
+      "integrity": {
+        "score": 60.0,
+        "evidence": [
+          "No quality assertions defined (-40)",
+          "All health checks passing"
+        ]
+      },
+      "stability": {
+        "score": 85.0,
+        "evidence": [
+          "Schema has 5 fields",
+          "No primary keys defined (-15)",
+          "Subtypes: Table"
+        ]
+      },
+      "lineage": {
+        "score": 54.5,
+        "evidence": [
+          "72 upstream sources",
+          "No downstream consumers -- potential orphan (-30)",
+          "Lineage risk cascade penalty: -15.5 (inherited from untrusted upstream source: urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.addresses,PROD))"
+        ]
+      },
+      "adoption": {
+        "score": 30.0,
+        "evidence": [
+          "No queries recorded in the last month (-40)",
+          "No unique users queried this asset (-30)"
+        ]
+      }
+    }
+  },
+  {
+    "urn": "urn:li:dataset:(urn:li:dataPlatform:snowflake,b2fd91.order_entry_db.order_entry.addresses,PROD)",
+    "name": "ADDRESSES",
+    "platform": "snowflake",
+    "composite_score": 50.4,
+    "grade": "D",
+    "tier": "untrusted",
+    "assessed_at": "2026-08-05 15:08:25.551170",
+    "evidence_summary": "Dataset ADDRESSES is graded D with a composite score of 52.8/100. Key remediation required in the following dimensions: provenance, integrity, adoption.",
+    "dimensions": {
+      "provenance": {
+        "score": 10.0,
+        "evidence": [
+          "No owners assigned (-30)",
+          "No dataset description (-25)",
+          "0/9 columns documented (-25)",
+          "1 glossary terms linked",
+          "Not assigned to any domain (-10)"
+        ]
+      },
+      "integrity": {
+        "score": 60.0,
+        "evidence": [
+          "No quality assertions defined (-40)",
+          "All health checks passing"
+        ]
+      },
+      "stability": {
+        "score": 85.0,
+        "evidence": [
+          "Schema has 9 fields",
+          "No primary keys defined (-15)",
+          "Subtypes: Table"
+        ]
+      },
+      "lineage": {
+        "score": 84.5,
+        "evidence": [
+          "4 upstream sources",
+          "37 downstream consumers",
+          "Consumed by 3 entity types: DASHBOARD, CHART, DATASET",
+          "Lineage risk cascade penalty: -15.5 (inherited from untrusted upstream source: urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.addresses,PROD))"
+        ]
+      },
+      "adoption": {
+        "score": 30.0,
+        "evidence": [
+          "No queries recorded in the last month (-40)",
+          "No unique users queried this asset (-30)"
+        ]
+      }
+    }
+  },
+  {
+    "urn": "urn:li:dataset:(urn:li:dataPlatform:snowflake,b2fd91.order_entry_db.order_entry.countries,PROD)",
+    "name": "COUNTRIES",
+    "platform": "snowflake",
+    "composite_score": 50.4,
+    "grade": "D",
+    "tier": "untrusted",
+    "assessed_at": "2026-08-05 15:08:26.056807",
+    "evidence_summary": "Dataset COUNTRIES is graded D with a composite score of 52.8/100. Key remediation required in the following dimensions: provenance, integrity, adoption.",
+    "dimensions": {
+      "provenance": {
+        "score": 10.0,
+        "evidence": [
+          "No owners assigned (-30)",
+          "No dataset description (-25)",
+          "0/4 columns documented (-25)",
+          "1 glossary terms linked",
+          "Not assigned to any domain (-10)"
+        ]
+      },
+      "integrity": {
+        "score": 60.0,
+        "evidence": [
+          "No quality assertions defined (-40)",
+          "All health checks passing"
+        ]
+      },
+      "stability": {
+        "score": 85.0,
+        "evidence": [
+          "Schema has 4 fields",
+          "No primary keys defined (-15)",
+          "Subtypes: Table"
+        ]
+      },
+      "lineage": {
+        "score": 84.5,
+        "evidence": [
+          "4 upstream sources",
+          "37 downstream consumers",
+          "Consumed by 3 entity types: DASHBOARD, CHART, DATASET",
+          "Lineage risk cascade penalty: -15.5 (inherited from untrusted upstream source: urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.countries,PROD))"
+        ]
+      },
+      "adoption": {
+        "score": 30.0,
+        "evidence": [
+          "No queries recorded in the last month (-40)",
+          "No unique users queried this asset (-30)"
+        ]
+      }
+    }
+  },
+  {
+    "urn": "urn:li:dataset:(urn:li:dataPlatform:snowflake,b2fd91.order_entry_db.order_entry.customers,PROD)",
+    "name": "CUSTOMERS",
+    "platform": "snowflake",
+    "composite_score": 50.4,
+    "grade": "D",
+    "tier": "untrusted",
+    "assessed_at": "2026-08-05 15:08:26.517341",
+    "evidence_summary": "Dataset CUSTOMERS is graded D with a composite score of 52.8/100. Key remediation required in the following dimensions: provenance, integrity, adoption.",
+    "dimensions": {
+      "provenance": {
+        "score": 10.0,
+        "evidence": [
+          "No owners assigned (-30)",
+          "No dataset description (-25)",
+          "0/22 columns documented (-25)",
+          "4 glossary terms linked",
+          "Not assigned to any domain (-10)"
+        ]
+      },
+      "integrity": {
+        "score": 60.0,
+        "evidence": [
+          "No quality assertions defined (-40)",
+          "All health checks passing"
+        ]
+      },
+      "stability": {
+        "score": 85.0,
+        "evidence": [
+          "Schema has 22 fields",
+          "No primary keys defined (-15)",
+          "Subtypes: Table"
+        ]
+      },
+      "lineage": {
+        "score": 84.5,
+        "evidence": [
+          "4 upstream sources",
+          "37 downstream consumers",
+          "Consumed by 3 entity types: DASHBOARD, CHART, DATASET",
+          "Lineage risk cascade penalty: -15.5 (inherited from untrusted upstream source: urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.customers,PROD))"
+        ]
+      },
+      "adoption": {
+        "score": 30.0,
+        "evidence": [
+          "No queries recorded in the last month (-40)",
+          "No unique users queried this asset (-30)"
+        ]
+      }
+    }
+  },
+  {
+    "urn": "urn:li:dataset:(urn:li:dataPlatform:snowflake,b2fd91.order_entry_db.order_entry.inventories,PROD)",
+    "name": "INVENTORIES",
+    "platform": "snowflake",
+    "composite_score": 50.4,
+    "grade": "D",
+    "tier": "untrusted",
+    "assessed_at": "2026-08-05 15:08:27.013701",
+    "evidence_summary": "Dataset INVENTORIES is graded D with a composite score of 52.8/100. Key remediation required in the following dimensions: provenance, integrity, adoption.",
+    "dimensions": {
+      "provenance": {
+        "score": 10.0,
+        "evidence": [
+          "No owners assigned (-30)",
+          "No dataset description (-25)",
+          "0/6 columns documented (-25)",
+          "1 glossary terms linked",
+          "Not assigned to any domain (-10)"
+        ]
+      },
+      "integrity": {
+        "score": 60.0,
+        "evidence": [
+          "No quality assertions defined (-40)",
+          "All health checks passing"
+        ]
+      },
+      "stability": {
+        "score": 85.0,
+        "evidence": [
+          "Schema has 6 fields",
+          "No primary keys defined (-15)",
+          "Subtypes: Table"
+        ]
+      },
+      "lineage": {
+        "score": 84.5,
+        "evidence": [
+          "4 upstream sources",
+          "37 downstream consumers",
+          "Consumed by 3 entity types: DASHBOARD, CHART, DATASET",
+          "Lineage risk cascade penalty: -15.5 (inherited from untrusted upstream source: urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.inventories,PROD))"
+        ]
+      },
+      "adoption": {
+        "score": 30.0,
+        "evidence": [
+          "No queries recorded in the last month (-40)",
+          "No unique users queried this asset (-30)"
+        ]
+      }
+    }
+  },
+  {
+    "urn": "urn:li:dataset:(urn:li:dataPlatform:snowflake,b2fd91.order_entry_db.order_entry.order_items,PROD)",
+    "name": "ORDER_ITEMS",
+    "platform": "snowflake",
+    "composite_score": 50.4,
+    "grade": "D",
+    "tier": "untrusted",
+    "assessed_at": "2026-08-05 15:08:27.496548",
+    "evidence_summary": "Dataset ORDER_ITEMS is graded D with a composite score of 52.8/100. Key remediation required in the following dimensions: provenance, integrity, adoption.",
+    "dimensions": {
+      "provenance": {
+        "score": 10.0,
+        "evidence": [
+          "No owners assigned (-30)",
+          "No dataset description (-25)",
+          "0/11 columns documented (-25)",
+          "3 glossary terms linked",
+          "Not assigned to any domain (-10)"
+        ]
+      },
+      "integrity": {
+        "score": 60.0,
+        "evidence": [
+          "No quality assertions defined (-40)",
+          "All health checks passing"
+        ]
+      },
+      "stability": {
+        "score": 85.0,
+        "evidence": [
+          "Schema has 11 fields",
+          "No primary keys defined (-15)",
+          "Subtypes: Table"
+        ]
+      },
+      "lineage": {
+        "score": 84.5,
+        "evidence": [
+          "4 upstream sources",
+          "37 downstream consumers",
+          "Consumed by 3 entity types: DASHBOARD, CHART, DATASET",
+          "Lineage risk cascade penalty: -15.5 (inherited from untrusted upstream source: urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.order_items,PROD))"
+        ]
+      },
+      "adoption": {
+        "score": 30.0,
+        "evidence": [
+          "No queries recorded in the last month (-40)",
+          "No unique users queried this asset (-30)"
+        ]
+      }
+    }
+  },
+  {
+    "urn": "urn:li:dataset:(urn:li:dataPlatform:snowflake,b2fd91.order_entry_db.order_entry.orders,PROD)",
+    "name": "ORDERS",
+    "platform": "snowflake",
+    "composite_score": 50.4,
+    "grade": "D",
+    "tier": "untrusted",
+    "assessed_at": "2026-08-05 15:08:27.950802",
+    "evidence_summary": "Dataset ORDERS is graded D with a composite score of 52.8/100. Key remediation required in the following dimensions: provenance, integrity, adoption.",
+    "dimensions": {
+      "provenance": {
+        "score": 10.0,
+        "evidence": [
+          "No owners assigned (-30)",
+          "No dataset description (-25)",
+          "0/15 columns documented (-25)",
+          "3 glossary terms linked",
+          "Not assigned to any domain (-10)"
+        ]
+      },
+      "integrity": {
+        "score": 60.0,
+        "evidence": [
+          "No quality assertions defined (-40)",
+          "All health checks passing"
+        ]
+      },
+      "stability": {
+        "score": 85.0,
+        "evidence": [
+          "Schema has 15 fields",
+          "No primary keys defined (-15)",
+          "Subtypes: Table"
+        ]
+      },
+      "lineage": {
+        "score": 84.5,
+        "evidence": [
+          "4 upstream sources",
+          "37 downstream consumers",
+          "Consumed by 3 entity types: DASHBOARD, CHART, DATASET",
+          "Lineage risk cascade penalty: -15.5 (inherited from untrusted upstream source: urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.orders,PROD))"
+        ]
+      },
+      "adoption": {
+        "score": 30.0,
+        "evidence": [
+          "No queries recorded in the last month (-40)",
+          "No unique users queried this asset (-30)"
+        ]
+      }
+    }
+  },
+  {
+    "urn": "urn:li:dataset:(urn:li:dataPlatform:snowflake,b2fd91.order_entry_db.order_entry.product_categories,PROD)",
+    "name": "PRODUCT_CATEGORIES",
+    "platform": "snowflake",
+    "composite_score": 50.4,
+    "grade": "D",
+    "tier": "untrusted",
+    "assessed_at": "2026-08-05 15:08:28.502191",
+    "evidence_summary": "Dataset PRODUCT_CATEGORIES is graded D with a composite score of 52.8/100. Key remediation required in the following dimensions: provenance, integrity, adoption.",
+    "dimensions": {
+      "provenance": {
+        "score": 10.0,
+        "evidence": [
+          "No owners assigned (-30)",
+          "No dataset description (-25)",
+          "0/4 columns documented (-25)",
+          "1 glossary terms linked",
+          "Not assigned to any domain (-10)"
+        ]
+      },
+      "integrity": {
+        "score": 60.0,
+        "evidence": [
+          "No quality assertions defined (-40)",
+          "All health checks passing"
+        ]
+      },
+      "stability": {
+        "score": 85.0,
+        "evidence": [
+          "Schema has 4 fields",
+          "No primary keys defined (-15)",
+          "Subtypes: Table"
+        ]
+      },
+      "lineage": {
+        "score": 84.5,
+        "evidence": [
+          "4 upstream sources",
+          "37 downstream consumers",
+          "Consumed by 3 entity types: DASHBOARD, CHART, DATASET",
+          "Lineage risk cascade penalty: -15.5 (inherited from untrusted upstream source: urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.product_categories,PROD))"
+        ]
+      },
+      "adoption": {
+        "score": 30.0,
+        "evidence": [
+          "No queries recorded in the last month (-40)",
+          "No unique users queried this asset (-30)"
+        ]
+      }
+    }
+  },
+  {
+    "urn": "urn:li:dataset:(urn:li:dataPlatform:snowflake,b2fd91.order_entry_db.order_entry.products,PROD)",
+    "name": "PRODUCTS",
+    "platform": "snowflake",
+    "composite_score": 50.4,
+    "grade": "D",
+    "tier": "untrusted",
+    "assessed_at": "2026-08-05 15:08:29.532680",
+    "evidence_summary": "Dataset PRODUCTS is graded D with a composite score of 52.8/100. Key remediation required in the following dimensions: provenance, integrity, adoption.",
+    "dimensions": {
+      "provenance": {
+        "score": 10.0,
+        "evidence": [
+          "No owners assigned (-30)",
+          "No dataset description (-25)",
+          "0/12 columns documented (-25)",
+          "1 glossary terms linked",
+          "Not assigned to any domain (-10)"
+        ]
+      },
+      "integrity": {
+        "score": 60.0,
+        "evidence": [
+          "No quality assertions defined (-40)",
+          "All health checks passing"
+        ]
+      },
+      "stability": {
+        "score": 85.0,
+        "evidence": [
+          "Schema has 12 fields",
+          "No primary keys defined (-15)",
+          "Subtypes: Table"
+        ]
+      },
+      "lineage": {
+        "score": 84.5,
+        "evidence": [
+          "4 upstream sources",
+          "37 downstream consumers",
+          "Consumed by 3 entity types: DASHBOARD, CHART, DATASET",
+          "Lineage risk cascade penalty: -15.5 (inherited from untrusted upstream source: urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.products,PROD))"
+        ]
+      },
+      "adoption": {
+        "score": 30.0,
+        "evidence": [
+          "No queries recorded in the last month (-40)",
+          "No unique users queried this asset (-30)"
+        ]
+      }
+    }
+  },
+  {
+    "urn": "urn:li:dataset:(urn:li:dataPlatform:snowflake,b2fd91.order_entry_db.order_entry.promotions,PROD)",
+    "name": "PROMOTIONS",
+    "platform": "snowflake",
+    "composite_score": 50.4,
+    "grade": "D",
+    "tier": "untrusted",
+    "assessed_at": "2026-08-05 15:08:29.938590",
+    "evidence_summary": "Dataset PROMOTIONS is graded D with a composite score of 52.8/100. Key remediation required in the following dimensions: provenance, integrity, adoption.",
+    "dimensions": {
+      "provenance": {
+        "score": 10.0,
+        "evidence": [
+          "No owners assigned (-30)",
+          "No dataset description (-25)",
+          "0/6 columns documented (-25)",
+          "1 glossary terms linked",
+          "Not assigned to any domain (-10)"
+        ]
+      },
+      "integrity": {
+        "score": 60.0,
+        "evidence": [
+          "No quality assertions defined (-40)",
+          "All health checks passing"
+        ]
+      },
+      "stability": {
+        "score": 85.0,
+        "evidence": [
+          "Schema has 6 fields",
+          "No primary keys defined (-15)",
+          "Subtypes: Table"
+        ]
+      },
+      "lineage": {
+        "score": 84.5,
+        "evidence": [
+          "7 upstream sources",
+          "37 downstream consumers",
+          "Consumed by 3 entity types: DASHBOARD, CHART, DATASET",
+          "Lineage risk cascade penalty: -15.5 (inherited from untrusted upstream source: urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.product_information,PROD))"
+        ]
+      },
+      "adoption": {
+        "score": 30.0,
+        "evidence": [
+          "No queries recorded in the last month (-40)",
+          "No unique users queried this asset (-30)"
+        ]
+      }
+    }
+  },
+  {
+    "urn": "urn:li:dataset:(urn:li:dataPlatform:snowflake,b2fd91.order_entry_db.order_entry.regions,PROD)",
+    "name": "REGIONS",
+    "platform": "snowflake",
+    "composite_score": 56.7,
+    "grade": "C-",
+    "tier": "review",
+    "assessed_at": "2026-08-05 15:08:30.460772",
+    "evidence_summary": "Dataset REGIONS is graded C- with a composite score of 59.0/100. Key remediation required in the following dimensions: provenance, integrity, adoption.",
+    "dimensions": {
+      "provenance": {
+        "score": 35.0,
+        "evidence": [
+          "No owners assigned (-30)",
+          "Description present (1709 chars)",
+          "0/4 columns documented (-25)",
+          "1 glossary terms linked",
+          "Not assigned to any domain (-10)"
+        ]
+      },
+      "integrity": {
+        "score": 60.0,
+        "evidence": [
+          "No quality assertions defined (-40)",
+          "All health checks passing"
+        ]
+      },
+      "stability": {
+        "score": 85.0,
+        "evidence": [
+          "Schema has 4 fields",
+          "No primary keys defined (-15)",
+          "Subtypes: Table"
+        ]
+      },
+      "lineage": {
+        "score": 84.5,
+        "evidence": [
+          "4 upstream sources",
+          "37 downstream consumers",
+          "Consumed by 3 entity types: DASHBOARD, CHART, DATASET",
+          "Lineage risk cascade penalty: -15.5 (inherited from untrusted upstream source: urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.regions,PROD))"
+        ]
+      },
+      "adoption": {
+        "score": 30.0,
+        "evidence": [
+          "No queries recorded in the last month (-40)",
+          "No unique users queried this asset (-30)"
+        ]
+      }
+    }
+  },
+  {
+    "urn": "urn:li:dataset:(urn:li:dataPlatform:snowflake,b2fd91.order_entry_db.order_entry.warehouses,PROD)",
+    "name": "WAREHOUSES",
+    "platform": "snowflake",
+    "composite_score": 50.4,
+    "grade": "D",
+    "tier": "untrusted",
+    "assessed_at": "2026-08-05 15:08:30.873601",
+    "evidence_summary": "Dataset WAREHOUSES is graded D with a composite score of 52.8/100. Key remediation required in the following dimensions: provenance, integrity, adoption.",
+    "dimensions": {
+      "provenance": {
+        "score": 10.0,
+        "evidence": [
+          "No owners assigned (-30)",
+          "No dataset description (-25)",
+          "0/4 columns documented (-25)",
+          "3 glossary terms linked",
+          "Not assigned to any domain (-10)"
+        ]
+      },
+      "integrity": {
+        "score": 60.0,
+        "evidence": [
+          "No quality assertions defined (-40)",
+          "All health checks passing"
+        ]
+      },
+      "stability": {
+        "score": 85.0,
+        "evidence": [
+          "Schema has 4 fields",
+          "No primary keys defined (-15)",
+          "Subtypes: Table"
+        ]
+      },
+      "lineage": {
+        "score": 84.5,
+        "evidence": [
+          "4 upstream sources",
+          "37 downstream consumers",
+          "Consumed by 3 entity types: DASHBOARD, CHART, DATASET",
+          "Lineage risk cascade penalty: -15.5 (inherited from untrusted upstream source: urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.warehouses,PROD))"
+        ]
+      },
+      "adoption": {
+        "score": 30.0,
+        "evidence": [
+          "No queries recorded in the last month (-40)",
+          "No unique users queried this asset (-30)"
+        ]
+      }
+    }
+  },
+  {
+    "urn": "urn:li:dataset:(urn:li:dataPlatform:tableau,b2fd91.37fcfb15-34ae-973a-5ae3-cf63691d48e3,PROD)",
+    "name": "Custom SQL Query",
+    "platform": "tableau",
+    "composite_score": 50.4,
+    "grade": "D",
+    "tier": "untrusted",
+    "assessed_at": "2026-08-05 15:08:31.404734",
+    "evidence_summary": "Dataset Custom SQL Query is graded D with a composite score of 52.8/100. Key remediation required in the following dimensions: provenance, integrity, adoption.",
+    "dimensions": {
+      "provenance": {
+        "score": 10.0,
+        "evidence": [
+          "No owners assigned (-30)",
+          "No dataset description (-25)",
+          "0/4 columns documented (-25)",
+          "1 glossary terms linked",
+          "Not assigned to any domain (-10)"
+        ]
+      },
+      "integrity": {
+        "score": 60.0,
+        "evidence": [
+          "No quality assertions defined (-40)",
+          "All health checks passing"
+        ]
+      },
+      "stability": {
+        "score": 85.0,
+        "evidence": [
+          "Schema has 4 fields",
+          "No primary keys defined (-15)",
+          "Subtypes: View, Custom SQL"
+        ]
+      },
+      "lineage": {
+        "score": 84.5,
+        "evidence": [
+          "71 upstream sources",
+          "3 downstream consumers",
+          "Consumed by 3 entity types: DASHBOARD, CHART, DATASET",
+          "Lineage risk cascade penalty: -15.5 (inherited from untrusted upstream source: urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.addresses,PROD))"
+        ]
+      },
+      "adoption": {
+        "score": 30.0,
+        "evidence": [
+          "No queries recorded in the last month (-40)",
+          "No unique users queried this asset (-30)"
+        ]
+      }
+    }
+  },
+  {
+    "urn": "urn:li:dataset:(urn:li:dataPlatform:tableau,b2fd91.4a3af1dd-fd0c-7077-d5fd-aa2fdf87cb23,PROD)",
+    "name": "Custom SQL Query",
+    "platform": "tableau",
+    "composite_score": 50.4,
+    "grade": "D",
+    "tier": "untrusted",
+    "assessed_at": "2026-08-05 15:08:31.824172",
+    "evidence_summary": "Dataset Custom SQL Query is graded D with a composite score of 52.8/100. Key remediation required in the following dimensions: provenance, integrity, adoption.",
+    "dimensions": {
+      "provenance": {
+        "score": 10.0,
+        "evidence": [
+          "No owners assigned (-30)",
+          "No dataset description (-25)",
+          "0/4 columns documented (-25)",
+          "1 glossary terms linked",
+          "Not assigned to any domain (-10)"
+        ]
+      },
+      "integrity": {
+        "score": 60.0,
+        "evidence": [
+          "No quality assertions defined (-40)",
+          "All health checks passing"
+        ]
+      },
+      "stability": {
+        "score": 85.0,
+        "evidence": [
+          "Schema has 4 fields",
+          "No primary keys defined (-15)",
+          "Subtypes: View, Custom SQL"
+        ]
+      },
+      "lineage": {
+        "score": 84.5,
+        "evidence": [
+          "71 upstream sources",
+          "3 downstream consumers",
+          "Consumed by 3 entity types: DASHBOARD, CHART, DATASET",
+          "Lineage risk cascade penalty: -15.5 (inherited from untrusted upstream source: urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.addresses,PROD))"
+        ]
+      },
+      "adoption": {
+        "score": 30.0,
+        "evidence": [
+          "No queries recorded in the last month (-40)",
+          "No unique users queried this asset (-30)"
+        ]
+      }
+    }
+  },
+  {
+    "urn": "urn:li:dataset:(urn:li:dataPlatform:tableau,b2fd91.8bfe7483-1c9a-a0e1-ec84-57207dd37a15,PROD)",
+    "name": "Custom SQL Query",
+    "platform": "tableau",
+    "composite_score": 50.4,
+    "grade": "D",
+    "tier": "untrusted",
+    "assessed_at": "2026-08-05 15:08:32.351335",
+    "evidence_summary": "Dataset Custom SQL Query is graded D with a composite score of 52.8/100. Key remediation required in the following dimensions: provenance, integrity, adoption.",
+    "dimensions": {
+      "provenance": {
+        "score": 10.0,
+        "evidence": [
+          "No owners assigned (-30)",
+          "No dataset description (-25)",
+          "0/5 columns documented (-25)",
+          "2 glossary terms linked",
+          "Not assigned to any domain (-10)"
+        ]
+      },
+      "integrity": {
+        "score": 60.0,
+        "evidence": [
+          "No quality assertions defined (-40)",
+          "All health checks passing"
+        ]
+      },
+      "stability": {
+        "score": 85.0,
+        "evidence": [
+          "Schema has 5 fields",
+          "No primary keys defined (-15)",
+          "Subtypes: View, Custom SQL"
+        ]
+      },
+      "lineage": {
+        "score": 84.5,
+        "evidence": [
+          "71 upstream sources",
+          "3 downstream consumers",
+          "Consumed by 3 entity types: DASHBOARD, CHART, DATASET",
+          "Lineage risk cascade penalty: -15.5 (inherited from untrusted upstream source: urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.addresses,PROD))"
+        ]
+      },
+      "adoption": {
+        "score": 30.0,
+        "evidence": [
+          "No queries recorded in the last month (-40)",
+          "No unique users queried this asset (-30)"
+        ]
+      }
+    }
+  },
+  {
+    "urn": "urn:li:dataset:(urn:li:dataPlatform:tableau,b2fd91.f32082e5-06b8-f46e-9047-4611fffe66b0,PROD)",
+    "name": "Custom SQL Query",
+    "platform": "tableau",
+    "composite_score": 50.4,
+    "grade": "D",
+    "tier": "untrusted",
+    "assessed_at": "2026-08-05 15:08:32.775616",
+    "evidence_summary": "Dataset Custom SQL Query is graded D with a composite score of 52.8/100. Key remediation required in the following dimensions: provenance, integrity, adoption.",
+    "dimensions": {
+      "provenance": {
+        "score": 10.0,
+        "evidence": [
+          "No owners assigned (-30)",
+          "No dataset description (-25)",
+          "0/4 columns documented (-25)",
+          "1 glossary terms linked",
+          "Not assigned to any domain (-10)"
+        ]
+      },
+      "integrity": {
+        "score": 60.0,
+        "evidence": [
+          "No quality assertions defined (-40)",
+          "All health checks passing"
+        ]
+      },
+      "stability": {
+        "score": 85.0,
+        "evidence": [
+          "Schema has 4 fields",
+          "No primary keys defined (-15)",
+          "Subtypes: View, Custom SQL"
+        ]
+      },
+      "lineage": {
+        "score": 84.5,
+        "evidence": [
+          "71 upstream sources",
+          "3 downstream consumers",
+          "Consumed by 3 entity types: DASHBOARD, CHART, DATASET",
+          "Lineage risk cascade penalty: -15.5 (inherited from untrusted upstream source: urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.addresses,PROD))"
+        ]
+      },
+      "adoption": {
+        "score": 30.0,
+        "evidence": [
+          "No queries recorded in the last month (-40)",
+          "No unique users queried this asset (-30)"
+        ]
+      }
+    }
+  },
+  {
+    "urn": "urn:li:dataset:(urn:li:dataPlatform:snowflake,b2fd91.order_entry_db.analytics.order_details_replica,PROD)",
+    "name": "ORDER_DETAILS_REPLICA",
+    "platform": "snowflake",
+    "composite_score": 43.4,
+    "grade": "D",
+    "tier": "untrusted",
+    "assessed_at": "2026-08-05 15:08:33.372128",
+    "evidence_summary": "Dataset ORDER_DETAILS_REPLICA is graded D with a composite score of 45.8/100. Key remediation required in the following dimensions: provenance, integrity, lineage, adoption.",
+    "dimensions": {
+      "provenance": {
+        "score": 0.0,
+        "evidence": [
+          "No owners assigned (-30)",
+          "No dataset description (-25)",
+          "0/55 columns documented (-25)",
+          "No glossary terms linked (-10)",
+          "Not assigned to any domain (-10)"
+        ]
+      },
+      "integrity": {
+        "score": 60.0,
+        "evidence": [
+          "No quality assertions defined (-40)",
+          "All health checks passing"
+        ]
+      },
+      "stability": {
+        "score": 85.0,
+        "evidence": [
+          "Schema has 55 fields",
+          "No primary keys defined (-15)",
+          "Subtypes: View"
+        ]
+      },
+      "lineage": {
+        "score": 54.5,
+        "evidence": [
+          "71 upstream sources",
+          "No downstream consumers -- potential orphan (-30)",
+          "Lineage risk cascade penalty: -15.5 (inherited from untrusted upstream source: urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.addresses,PROD))"
+        ]
+      },
+      "adoption": {
+        "score": 30.0,
+        "evidence": [
+          "No queries recorded in the last month (-40)",
+          "No unique users queried this asset (-30)"
+        ]
+      }
+    }
+  }
+]

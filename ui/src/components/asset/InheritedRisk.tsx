@@ -1,0 +1,1 @@
+export default function InheritedRisk() { return <div>InheritedRisk</div>; }

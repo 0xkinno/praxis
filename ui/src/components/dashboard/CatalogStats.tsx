@@ -1,0 +1,1 @@
+export default function CatalogStats() { return <div>CatalogStats</div>; }

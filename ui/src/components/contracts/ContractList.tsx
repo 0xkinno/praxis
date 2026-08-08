@@ -1,0 +1,1 @@
+export default function ContractList() { return <div>ContractList</div>; }

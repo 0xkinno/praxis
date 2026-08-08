@@ -1,0 +1,1 @@
+export default function ArtifactViewer() { return <div>ArtifactViewer</div>; }

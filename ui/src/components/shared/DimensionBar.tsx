@@ -1,0 +1,1 @@
+export default function DimensionBar() { return <div>DimensionBar</div>; }

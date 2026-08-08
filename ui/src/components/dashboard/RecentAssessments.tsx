@@ -1,0 +1,1 @@
+export default function RecentAssessments() { return <div>RecentAssessments</div>; }

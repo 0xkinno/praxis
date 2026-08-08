@@ -1,0 +1,44 @@
+# {{ asset_name }}
+
+> Auto-generated documentation by PRAXIS Trust Assessment.
+> Trust Score: **{{ trust_grade }}** ({{ trust_score }}/100)
+
+## Overview
+
+{{ description | default("This dataset requires documentation. PRAXIS has flagged it for attention based on trust assessment.") }}
+
+**Platform:** {{ platform }}
+**Domain:** {{ domain | default("Unassigned") }}
+**Owners:** {{ owners | join(", ") | default("No owners assigned") }}
+
+## Schema
+
+| Column | Type | Description |
+|--------|------|-------------|
+{%- for field in fields %}
+| {{ field.fieldPath }} | {{ field.nativeDataType | default(field.type) }} | {{ field.description | default("*Needs documentation*") }} |
+{%- endfor %}
+
+## Trust Assessment
+
+| Dimension | Score | Key Finding |
+|-----------|-------|-------------|
+{%- for dim_name, dim in dimensions.items() %}
+| {{ dim_name | title }} | {{ dim.score }}/100 | {{ dim.evidence[0] if dim.evidence else "No findings" }} |
+{%- endfor %}
+
+## Recommended Actions
+
+{%- if dimensions.provenance.score < 70 %}
+- Add dataset description and column-level documentation
+- Assign at least two owners (primary + backup)
+- Link relevant glossary terms
+{%- endif %}
+{%- if dimensions.integrity.score < 70 %}
+- Define quality assertions (freshness, volume, field-level)
+- Set up a data contract
+{%- endif %}
+{%- if dimensions.lineage.score < 70 %}
+- Verify upstream sources are connected
+- Confirm downstream consumers are tracked
+{%- endif %}

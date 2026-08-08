@@ -1,0 +1,24 @@
+{
+  "verdict": "BLOCK_TRAINING",
+  "summary": "ML Training Blocked: 1 direct source is untrusted (<55) or 1 upstream dependency has severe risk (<40).",
+  "recommendation": "Do NOT train. Resolve underlying data quality gaps, assign owners/descriptions, and rerun assessment.",
+  "sources": [
+    {
+      "urn": "urn:li:dataset:(urn:li:dataPlatform:dbt,b2fd91.ORDER_ENTRY_DB.analytics.order_details,PROD)",
+      "name": "order_details",
+      "score": 72.0,
+      "grade": "C+",
+      "status": "OK"
+    }
+  ],
+  "upstream_risks": [
+    {
+      "urn": "urn:li:dataset:(urn:li:dataPlatform:hive,logging_events,PROD)",
+      "name": "logging_events",
+      "score": 33.8,
+      "grade": "F",
+      "hop": 1,
+      "reason": "Low trust upstream asset (Score: 33.8, Grade: F) at hop 1. Gaps: no ownership, no quality assertions."
+    }
+  ]
+}

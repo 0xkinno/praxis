@@ -1,0 +1,20 @@
+# PRAXIS Trust Remediation PR
+
+This PR contains auto-generated remediation configs for low-trust datasets, generated during trust assessment run `{{ run_id }}`.
+
+## Asset Remediation Summary
+
+| Asset | URN | Current Grade | Composite Score | Primary Gaps |
+|-------|-----|---------------|-----------------|--------------|
+{%- for asset in affected_assets %}
+| {{ asset.name }} | `{{ asset.urn }}` | **{{ asset.grade }}** | {{ asset.composite_score }}/100 | {{ asset.gaps | join(", ") }} |
+{%- endfor %}
+
+## Generated Artifacts
+
+The following files have been committed to this branch:
+{%- for file in committed_files %}
+- `{{ file.path }}` ({{ file.type }})
+{%- endfor %}
+
+*Remediation artifacts are fully grounded in schema metadata fetched from DataHub. Link: [PRAXIS Dashboard](http://localhost:3000)*

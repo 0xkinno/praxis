@@ -1,0 +1,1 @@
+export default function LiveIndicator() { return <div>LiveIndicator</div>; }

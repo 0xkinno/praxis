@@ -1,0 +1,1 @@
+export default function GeneratedArtifacts() { return <div>GeneratedArtifacts</div>; }

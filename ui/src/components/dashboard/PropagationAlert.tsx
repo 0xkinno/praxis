@@ -1,0 +1,1 @@
+export default function PropagationAlert() { return <div>PropagationAlert</div>; }

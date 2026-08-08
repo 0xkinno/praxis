@@ -1,0 +1,61 @@
+# PRAXIS Daily Intelligence Digest
+Date: {{ date }}
+Run ID: `{{ run_id }}`
+
+## Catalog Overview
+| Metric | Value |
+|--------|-------|
+| Total Assets Assessed | {{ total_assessed }} |
+| Average Trust Score | {{ avg_score | round(1) }} |
+| Trusted Assets | {{ tier_distribution.trusted }} |
+| Review Assets | {{ tier_distribution.review }} |
+| Untrusted Assets | {{ tier_distribution.untrusted }} |
+
+## Catalog Deltas (Changes Since Last Run)
+{%- if deltas %}
+### Degraded Assets
+| Asset | Previous Score | New Score | Delta |
+|-------|----------------|-----------|-------|
+{%- for item in deltas.degraded %}
+| {{ item.name }} | {{ item.prev }} | {{ item.new }} | {{ item.delta }} |
+{%- endfor %}
+
+### Improved Assets
+| Asset | Previous Score | New Score | Delta |
+|-------|----------------|-----------|-------|
+{%- for item in deltas.improved %}
+| {{ item.name }} | {{ item.prev }} | {{ item.new }} | {{ item.delta }} |
+{%- endfor %}
+{%- else %}
+*No score changes detected since the last run.*
+{%- endif %}
+
+## Domain Health
+| Domain | Asset Count | Average Score | Grade | Weakest Dimension |
+|--------|-------------|---------------|-------|-------------------|
+{%- for dom in domain_health %}
+| {{ dom.domain }} | {{ dom.asset_count }} | {{ dom.average_score }} | **{{ dom.grade }}** | {{ dom.weakest_dimension }} |
+{%- endfor %}
+
+## Top 5 Trust Risks
+| Asset | URN | Grade | Score | Reason |
+|-------|-----|-------|-------|--------|
+{%- for risk in top_risks %}
+| {{ risk.name }} | `{{ risk.urn }}` | **{{ risk.grade }}** | {{ risk.composite_score }} | {{ risk.evidence_summary }} |
+{%- endfor %}
+
+## Trust Propagation Summary
+- Untrusted sources: {{ untrusted_sources_count }}
+- Downstream assets affected: {{ affected_downstream_count }}
+{%- if propagation_paths %}
+- Max hop distance: {{ max_hop }}
+{%- endif %}
+
+## Remediation & Delivery
+- Total Remediations Generated: {{ artifact_count }}
+- Remediation Pull Request: {{ pr_url | default("GitHub PR agent not configured") }}
+
+## Recommended Actions
+{%- for action in recommended_actions %}
+- {{ action }}
+{%- endfor %}

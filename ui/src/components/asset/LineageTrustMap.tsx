@@ -1,0 +1,1 @@
+export default function LineageTrustMap() { return <div>LineageTrustMap</div>; }

@@ -1,0 +1,1 @@
+export default function MLGateVerdict() { return <div>MLGateVerdict</div>; }
