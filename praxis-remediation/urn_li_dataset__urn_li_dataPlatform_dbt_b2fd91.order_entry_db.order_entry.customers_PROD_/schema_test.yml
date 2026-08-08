@@ -2,7 +2,7 @@
 # Asset: customers
 # URN: urn:li:dataset:(urn:li:dataPlatform:dbt,b2fd91.order_entry_db.order_entry.customers,PROD)
 # Trust Score: B- (72.9/100)
-# Generated: 2026-08-08T13:44:02.330298+00:00
+# Generated: 2026-08-08T13:47:30.226468+00:00
 #
 # Grounded in DataHub schema metadata for dbt.customers
 
