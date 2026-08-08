@@ -2,7 +2,7 @@
 # Asset: order_details
 # URN: urn:li:dataset:(urn:li:dataPlatform:dbt,b2fd91.ORDER_ENTRY_DB.analytics.order_details,PROD)
 # Trust Score: B- (72.9/100)
-# Generated: 2026-08-08T13:44:02.235230+00:00
+# Generated: 2026-08-08T13:47:30.185190+00:00
 
 contract:
   name: "order_details_contract"
