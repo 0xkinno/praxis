@@ -1,8 +1,8 @@
 # PRAXIS Data Contract
 # Asset: ORDER_DETAILS
 # URN: urn:li:dataset:(urn:li:dataPlatform:snowflake,b2fd91.order_entry_db.analytics.order_details,PROD)
-# Trust Score: B- (73.2/100)
-# Generated: 2026-08-09T15:39:01.455378+00:00
+# Trust Score: B- (71.3/100)
+# Generated: 2026-08-09T15:41:49.430811+00:00
 
 contract:
   name: "ORDER_DETAILS_contract"

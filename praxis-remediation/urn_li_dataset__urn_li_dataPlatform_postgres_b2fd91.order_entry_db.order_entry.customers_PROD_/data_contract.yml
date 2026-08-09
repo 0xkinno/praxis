@@ -2,7 +2,7 @@
 # Asset: customers
 # URN: urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.customers,PROD)
 # Trust Score: C- (57.8/100)
-# Generated: 2026-08-09T15:39:01.467220+00:00
+# Generated: 2026-08-09T15:41:49.446395+00:00
 
 contract:
   name: "customers_contract"

@@ -1,8 +1,8 @@
 # PRAXIS Data Contract
 # Asset: customers
 # URN: urn:li:dataset:(urn:li:dataPlatform:s3,b2fd91.demo-data-bucket/order_entry/customers,PROD)
-# Trust Score: C- (57.8/100)
-# Generated: 2026-08-09T15:39:01.488647+00:00
+# Trust Score: C- (55.8/100)
+# Generated: 2026-08-09T15:41:49.470029+00:00
 
 contract:
   name: "customers_contract"

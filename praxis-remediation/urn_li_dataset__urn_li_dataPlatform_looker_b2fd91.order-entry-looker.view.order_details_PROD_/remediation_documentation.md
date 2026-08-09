@@ -1,7 +1,7 @@
 # order_details
 
 > Auto-generated documentation by PRAXIS Trust Assessment.
-> Trust Score: **C+** (67.8/100)
+> Trust Score: **C+** (65.8/100)
 
 ## Overview
 
@@ -80,7 +80,7 @@
 | Provenance | 40.0/100 | 4 owners assigned |
 | Integrity | 75.0/100 | No quality assertions defined (-25) |
 | Stability | 90.0/100 | Schema has 57 fields |
-| Lineage | 100.0/100 | 71 upstream sources |
+| Lineage | 87.3/100 | 71 upstream sources |
 | Adoption | 45.0/100 | No queries recorded in the last month (-35) |
 
 ## Recommended Actions

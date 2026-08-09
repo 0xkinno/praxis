@@ -1,8 +1,8 @@
 # PRAXIS Data Contract
 # Asset: ORDER_HISTORY
 # URN: urn:li:dataset:(urn:li:dataPlatform:snowflake,b2fd91.order_entry_db.analytics.order_history,PROD)
-# Trust Score: C- (55.5/100)
-# Generated: 2026-08-09T15:39:01.506608+00:00
+# Trust Score: D (53.6/100)
+# Generated: 2026-08-09T15:41:49.485949+00:00
 
 contract:
   name: "ORDER_HISTORY_contract"

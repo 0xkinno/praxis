@@ -1,8 +1,8 @@
 # PRAXIS Data Contract
 # Asset: Time Inteligence Measures
 # URN: urn:li:dataset:(urn:li:dataPlatform:powerbi,b2fd91.datahub_order_entries.Time_Inteligence_Measures,PROD)
-# Trust Score: C+ (65.2/100)
-# Generated: 2026-08-09T15:39:01.484699+00:00
+# Trust Score: C (63.3/100)
+# Generated: 2026-08-09T15:41:49.466042+00:00
 
 contract:
   name: "Time Inteligence Measures_contract"

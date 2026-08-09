@@ -2,7 +2,7 @@
 # Asset: orders
 # URN: urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.orders,PROD)
 # Trust Score: C- (57.8/100)
-# Generated: 2026-08-09T15:39:01.472002+00:00
+# Generated: 2026-08-09T15:41:49.452063+00:00
 
 contract:
   name: "orders_contract"

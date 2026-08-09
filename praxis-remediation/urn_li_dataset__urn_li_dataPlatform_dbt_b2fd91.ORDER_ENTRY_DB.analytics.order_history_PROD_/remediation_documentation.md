@@ -1,7 +1,7 @@
 # order_history
 
 > Auto-generated documentation by PRAXIS Trust Assessment.
-> Trust Score: **C+** (65.0/100)
+> Trust Score: **C** (63.1/100)
 
 ## Overview
 
@@ -28,7 +28,7 @@ Incremental table containing all historical order information
 | Provenance | 35.0/100 | No owners assigned (-35) |
 | Integrity | 75.0/100 | No quality assertions defined (-25) |
 | Stability | 90.0/100 | Schema has 5 fields |
-| Lineage | 90.0/100 | 71 upstream sources |
+| Lineage | 77.3/100 | 71 upstream sources |
 | Adoption | 45.0/100 | No queries recorded in the last month (-35) |
 
 ## Recommended Actions

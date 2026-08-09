@@ -1,8 +1,8 @@
 # PRAXIS Data Contract
 # Asset: order_history
 # URN: urn:li:dataset:(urn:li:dataPlatform:dbt,b2fd91.ORDER_ENTRY_DB.analytics.order_history,PROD)
-# Trust Score: C+ (65.0/100)
-# Generated: 2026-08-09T15:39:01.408134+00:00
+# Trust Score: C (63.1/100)
+# Generated: 2026-08-09T15:41:49.357921+00:00
 
 contract:
   name: "order_history_contract"

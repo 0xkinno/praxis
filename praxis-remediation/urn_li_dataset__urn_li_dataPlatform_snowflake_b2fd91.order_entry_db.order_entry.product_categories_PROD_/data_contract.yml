@@ -1,8 +1,8 @@
 # PRAXIS Data Contract
 # Asset: PRODUCT_CATEGORIES
 # URN: urn:li:dataset:(urn:li:dataPlatform:snowflake,b2fd91.order_entry_db.order_entry.product_categories,PROD)
-# Trust Score: C- (57.8/100)
-# Generated: 2026-08-09T15:39:01.515906+00:00
+# Trust Score: C- (55.8/100)
+# Generated: 2026-08-09T15:41:49.496076+00:00
 
 contract:
   name: "PRODUCT_CATEGORIES_contract"

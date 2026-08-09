@@ -1,7 +1,7 @@
 # ORDER_DETAILS_REPLICA
 
 > Auto-generated documentation by PRAXIS Trust Assessment.
-> Trust Score: **C-** (55.5/100)
+> Trust Score: **D** (53.6/100)
 
 ## Overview
 
@@ -78,7 +78,7 @@
 | Provenance | 0.0/100 | No owners assigned (-35) |
 | Integrity | 75.0/100 | No quality assertions defined (-25) |
 | Stability | 90.0/100 | Schema has 55 fields |
-| Lineage | 85.0/100 | 71 upstream sources |
+| Lineage | 72.3/100 | 71 upstream sources |
 | Adoption | 45.0/100 | No queries recorded in the last month (-35) |
 
 ## Recommended Actions
