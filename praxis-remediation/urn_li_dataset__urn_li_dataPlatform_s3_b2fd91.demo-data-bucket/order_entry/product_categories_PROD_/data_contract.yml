@@ -1,8 +1,8 @@
 # PRAXIS Data Contract
 # Asset: product_categories
 # URN: urn:li:dataset:(urn:li:dataPlatform:s3,b2fd91.demo-data-bucket/order_entry/product_categories,PROD)
-# Trust Score: C (62.2/100)
-# Generated: 2026-08-09T15:36:07.163050+00:00
+# Trust Score: C- (57.8/100)
+# Generated: 2026-08-09T15:39:01.496522+00:00
 
 contract:
   name: "product_categories_contract"

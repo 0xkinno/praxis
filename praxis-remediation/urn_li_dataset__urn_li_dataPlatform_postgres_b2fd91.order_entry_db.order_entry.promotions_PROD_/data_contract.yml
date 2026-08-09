@@ -1,8 +1,8 @@
 # PRAXIS Data Contract
 # Asset: promotions
 # URN: urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.promotions,PROD)
-# Trust Score: C (62.2/100)
-# Generated: 2026-08-09T15:36:07.132626+00:00
+# Trust Score: C- (57.8/100)
+# Generated: 2026-08-09T15:39:01.476831+00:00
 
 contract:
   name: "promotions_contract"

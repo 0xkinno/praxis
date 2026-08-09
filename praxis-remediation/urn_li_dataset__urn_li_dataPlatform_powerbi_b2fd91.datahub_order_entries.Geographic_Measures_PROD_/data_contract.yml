@@ -1,8 +1,8 @@
 # PRAXIS Data Contract
 # Asset: Geographic Measures
 # URN: urn:li:dataset:(urn:li:dataPlatform:powerbi,b2fd91.datahub_order_entries.Geographic_Measures,PROD)
-# Trust Score: C+ (67.5/100)
-# Generated: 2026-08-09T15:36:07.140607+00:00
+# Trust Score: C (64.0/100)
+# Generated: 2026-08-09T15:39:01.482685+00:00
 
 contract:
   name: "Geographic Measures_contract"

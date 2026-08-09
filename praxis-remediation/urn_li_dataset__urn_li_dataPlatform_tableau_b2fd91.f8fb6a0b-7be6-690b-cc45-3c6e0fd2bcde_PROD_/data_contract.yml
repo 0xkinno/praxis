@@ -1,8 +1,8 @@
 # PRAXIS Data Contract
 # Asset: Orders By Day
 # URN: urn:li:dataset:(urn:li:dataPlatform:tableau,b2fd91.f8fb6a0b-7be6-690b-cc45-3c6e0fd2bcde,PROD)
-# Trust Score: C+ (68.5/100)
-# Generated: 2026-08-09T15:36:07.107677+00:00
+# Trust Score: C+ (65.2/100)
+# Generated: 2026-08-09T15:39:01.463082+00:00
 
 contract:
   name: "Orders By Day_contract"

@@ -1,8 +1,8 @@
 # PRAXIS Data Contract
 # Asset: Custom SQL Query
 # URN: urn:li:dataset:(urn:li:dataPlatform:tableau,b2fd91.4a3af1dd-fd0c-7077-d5fd-aa2fdf87cb23,PROD)
-# Trust Score: C (62.2/100)
-# Generated: 2026-08-09T15:36:07.217615+00:00
+# Trust Score: C- (57.8/100)
+# Generated: 2026-08-09T15:39:01.523358+00:00
 
 contract:
   name: "Custom SQL Query_contract"

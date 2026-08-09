@@ -1,8 +1,8 @@
 # PRAXIS Data Contract
 # Asset: order_details
 # URN: urn:li:dataset:(urn:li:dataPlatform:looker,b2fd91.order-entry-looker.view.order_details,PROD)
-# Trust Score: B- (71.0/100)
-# Generated: 2026-08-09T15:36:07.097680+00:00
+# Trust Score: C+ (67.8/100)
+# Generated: 2026-08-09T15:39:01.452692+00:00
 
 contract:
   name: "order_details_contract"
