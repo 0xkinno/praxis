@@ -8,12 +8,12 @@ def score_integrity(entity: dict) -> DimensionScore:
     score = 100.0
     evidence = []
     
-    # Quality assertions (0-40 points)
+    # Quality assertions (0-30 points)
     assertions_data = entity.get("assertions") or {}
     assertions = assertions_data.get("assertions") or []
     if not assertions:
-        score -= 40.0
-        evidence.append("No quality assertions defined (-40)")
+        score -= 25.0
+        evidence.append("No quality assertions defined (-25)")
     else:
         evidence.append(f"{len(assertions)} assertions defined")
         
@@ -55,13 +55,12 @@ def score_integrity(entity: dict) -> DimensionScore:
     
     # Health signals (0-20 points)
     health = entity.get("health") or []
-    if isinstance(health, dict):  # In case it comes as a dict
+    if isinstance(health, dict):
         health = health.get("health") or []
     
-    # Handle both list of dicts and dict structure
     unhealthy = []
     if isinstance(health, list):
-        unhealthy = [h for h in health if h and h.get("status") != "PASS"]
+        unhealthy = [h for h in health if isinstance(h, dict) and h.get("status") != "PASS"]
     
     if unhealthy:
         score -= min(20.0, len(unhealthy) * 10.0)

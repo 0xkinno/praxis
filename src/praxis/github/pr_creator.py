@@ -75,41 +75,88 @@ class PraxisPRCreator:
             files_committed = 0
             committed_files_list = []
             
-            # Commit each artifact
-            # Safe sanitization of URN for paths
-            for artifact in generated_artifacts:
-                safe_urn = artifact.target_urn.replace(":", "_").replace("(", "_").replace(")", "_").replace(",", "_")
-                file_path = f"praxis-remediation/{safe_urn}/{artifact.filename}"
+            # Try fast local Git commit & push first
+            git_success = False
+            try:
+                import subprocess
+                logger.info("Attempting fast local Git commit and push...")
                 
-                # Check if file exists to update, or create
-                try:
-                    # Try to get existing file
-                    contents = repo.get_contents(file_path, ref=branch_name)
-                    repo.update_file(
-                        path=file_path,
-                        message=f"Update remediation {artifact.filename} for {artifact.target_urn} [PRAXIS]",
-                        content=artifact.content,
-                        sha=contents.sha,
-                        branch=branch_name
-                    )
-                    logger.info(f"Updated file: {file_path}")
-                except GithubException as ge:
-                    if ge.status == 404: # File does not exist, create it
-                        repo.create_file(
+                # Write all files to disk locally first
+                for artifact in generated_artifacts:
+                    safe_urn = artifact.target_urn.replace(":", "_").replace("(", "_").replace(")", "_").replace(",", "_")
+                    dir_path = os.path.join("praxis-remediation", safe_urn)
+                    os.makedirs(dir_path, exist_ok=True)
+                    
+                    file_path = os.path.join(dir_path, artifact.filename)
+                    with open(file_path, "w", encoding="utf-8") as f:
+                        f.write(artifact.content)
+                    
+                    files_committed += 1
+                    committed_files_list.append({
+                        "path": f"praxis-remediation/{safe_urn}/{artifact.filename}",
+                        "type": artifact.artifact_type
+                    })
+                
+                # Run Git commands
+                subprocess.run(["git", "config", "user.name", "praxis-agent"], check=False)
+                subprocess.run(["git", "config", "user.email", "agent@praxis.ai"], check=False)
+                
+                # Checkout branch
+                subprocess.run(["git", "checkout", "-b", branch_name], check=False)
+                subprocess.run(["git", "checkout", branch_name], check=False)
+                
+                # Stage files
+                subprocess.run(["git", "add", "praxis-remediation/"], check=True)
+                # Commit (might be empty if nothing changed)
+                subprocess.run(["git", "commit", "-m", f"Add trust remediation files for run {run_id[:8]}"], check=False)
+                
+                # Push to remote using token URL to avoid credential prompts
+                remote_url = f"https://x-access-token:{self.github_token}@github.com/{self.github_repo}.git"
+                subprocess.run(["git", "push", remote_url, f"{branch_name}:{branch_name}", "--force"], check=True)
+                
+                logger.info(f"Pushed branch {branch_name} to GitHub remote successfully.")
+                git_success = True
+            except Exception as git_err:
+                logger.warning(f"Local Git operation failed: {git_err}. Falling back to GitHub API upload.")
+                files_committed = 0
+                committed_files_list = []
+                
+            if not git_success:
+                # Commit each artifact using PyGithub API
+                # Safe sanitization of URN for paths
+                for artifact in generated_artifacts:
+                    safe_urn = artifact.target_urn.replace(":", "_").replace("(", "_").replace(")", "_").replace(",", "_")
+                    file_path = f"praxis-remediation/{safe_urn}/{artifact.filename}"
+                    
+                    # Check if file exists to update, or create
+                    try:
+                        # Try to get existing file
+                        contents = repo.get_contents(file_path, ref=branch_name)
+                        repo.update_file(
                             path=file_path,
-                            message=f"Add remediation {artifact.filename} for {artifact.target_urn} [PRAXIS]",
+                            message=f"Update remediation {artifact.filename} for {artifact.target_urn} [PRAXIS]",
                             content=artifact.content,
+                            sha=contents.sha,
                             branch=branch_name
                         )
-                        logger.info(f"Created file: {file_path}")
-                    else:
-                        raise ge
-                        
-                files_committed += 1
-                committed_files_list.append({
-                    "path": file_path,
-                    "type": artifact.artifact_type
-                })
+                        logger.info(f"Updated file: {file_path}")
+                    except GithubException as ge:
+                        if ge.status == 404: # File does not exist, create it
+                            repo.create_file(
+                                path=file_path,
+                                message=f"Add remediation {artifact.filename} for {artifact.target_urn} [PRAXIS]",
+                                content=artifact.content,
+                                branch=branch_name
+                            )
+                            logger.info(f"Created file: {file_path}")
+                        else:
+                            raise ge
+                            
+                    files_committed += 1
+                    committed_files_list.append({
+                        "path": file_path,
+                        "type": artifact.artifact_type
+                    })
                 
             # Render PR Description
             # Prepare summary details of affected assets

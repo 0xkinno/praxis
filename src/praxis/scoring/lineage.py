@@ -11,20 +11,28 @@ def score_lineage(entity: dict, lineage_data: dict) -> DimensionScore:
     upstream = lineage_data.get("upstream") or []
     downstream = lineage_data.get("downstream") or []
     
-    # Upstream connectivity (0-40 points)
+    # Upstream connectivity (0-30 points)
     if not upstream:
-        score -= 30.0
-        evidence.append("No upstream sources found (-30)")
+        if downstream:
+            # Valid root ingestion / seed dataset with consumers -- no penalty
+            evidence.append("Root source dataset (no upstream, feeds downstream consumers)")
+        else:
+            score -= 25.0
+            evidence.append("No upstream sources found (-25)")
     else:
         evidence.append(f"{len(upstream)} upstream sources")
     
-    # Downstream consumers (0-40 points)
+    # Downstream consumers (0-30 points)
     if not downstream:
-        score -= 30.0
-        evidence.append("No downstream consumers -- potential orphan (-30)")
+        if upstream:
+            score -= 15.0
+            evidence.append("No downstream consumers -- terminal asset (-15)")
+        else:
+            score -= 30.0
+            evidence.append("No downstream consumers -- potential orphan (-30)")
     elif len(downstream) < 2:
-        score -= 10.0
-        evidence.append(f"Only {len(downstream)} downstream consumer (-10)")
+        score -= 5.0
+        evidence.append(f"Only {len(downstream)} downstream consumer (-5)")
     else:
         evidence.append(f"{len(downstream)} downstream consumers")
     
@@ -39,11 +47,11 @@ def score_lineage(entity: dict, lineage_data: dict) -> DimensionScore:
             evidence.append(f"Consumed by {len(consumer_types)} entity types: {', '.join(consumer_types)}")
         else:
             score -= 5.0
-            evidence.append(f"All consumers are same type (-5)")
+            evidence.append("All consumers are same type (-5)")
             
     # Complete isolation = severe penalty
     if not upstream and not downstream:
-        score -= 10.0  # Additional penalty
+        score -= 10.0
         evidence.append("Completely isolated asset -- no lineage in any direction (-10)")
         
     return DimensionScore(

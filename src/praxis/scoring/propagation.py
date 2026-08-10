@@ -23,7 +23,7 @@ class PropagationEngine:
         
         untrusted = [
             urn for urn, ts in trust_scores.items()
-            if ts.composite_score < threshold
+            if ts.composite_score < 60.0
         ]
         
         for source_urn in untrusted:

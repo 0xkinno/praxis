@@ -46,9 +46,15 @@ def generate_artifacts(trust_score: TrustScore, entity_data: dict) -> list[Gener
     ownership = entity_data.get("ownership") or {}
     owners = []
     for owner_assoc in (ownership.get("owners") or []):
+        if isinstance(owner_assoc, str):
+            owners.append(owner_assoc)
+            continue
         owner_entity = owner_assoc.get("owner") or {}
+        if isinstance(owner_entity, str):
+            owners.append(owner_entity)
+            continue
         # Try custom displayName first, then username/name
-        display_name = owner_entity.get("editableProperties", {}).get("displayName")
+        display_name = (owner_entity.get("editableProperties") or {}).get("displayName")
         if display_name:
             owners.append(display_name)
         elif "username" in owner_entity:

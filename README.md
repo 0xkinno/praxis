@@ -23,13 +23,22 @@
 
 ---
 
+## Live Demonstration Milestone
+
+- **Live Remediation Pull Request:** [https://github.com/0xkinno/praxis/pull/2](https://github.com/0xkinno/praxis/pull/2)
+PRAXIS opened a real GitHub Pull Request containing 220 grounded remediation artifacts (dbt tests, assertions, data contracts, freshness configs, documentation) for datasets scoring below the trust threshold, generated during a live assessment against DataHub showcase-ecommerce.
+
+See [docs/walkthrough.md](docs/walkthrough.md) for full architecture detail and execution logs.
+
+---
+
 ## Product Screenshots
 
-| Catalog Overview | Trust Explorer |
+| Catalog Overview | Lineage Cascade Trace |
 |:---:|:---:|
-| <img src="docs/screenshots/dashboard.png" alt="Catalog Overview" width="100%" /> | <img src="docs/screenshots/explorer.png" alt="Trust Explorer" width="100%" /> |
-| **Lineage Cascade Trace** | **ML Gate Terminal** |
-| <img src="docs/screenshots/cascade.png" alt="Lineage Cascade Trace" width="100%" /> | <img src="docs/screenshots/ml-gate.png" alt="ML Gate Terminal" width="100%" /> |
+| <img src="docs/screenshots/dashboard.png" alt="Catalog Overview" width="100%" /> | <img src="docs/screenshots/cascade.png" alt="Lineage Cascade Trace" width="100%" /> |
+| **Daily Digests & History** | **Code & Contracts Suite** |
+| <img src="docs/screenshots/digests.png" alt="Daily Digests & History" width="100%" /> | <img src="docs/screenshots/contracts.png" alt="Code & Contracts Suite" width="100%" /> |
 
 ---
 
@@ -37,9 +46,11 @@
 
 | Resource | Link |
 |---|---|
-| **API Endpoint** | [http://localhost:8000](http://localhost:8000) |
-| **Dashboard UI** | [http://localhost:3000](http://localhost:3000) |
-| **DataHub GMS** | [http://localhost:8080](http://localhost:8080) |
+| **Vercel Demo Deployment** | [https://praxis-trust.vercel.app](https://praxis-trust.vercel.app) |
+| **Live Remediation PR** | [https://github.com/0xkinno/praxis/pull/2](https://github.com/0xkinno/praxis/pull/2) |
+| **Dashboard UI (Local)** | [http://localhost:3000](http://localhost:3000) |
+| **API Endpoint (Local)** | [http://localhost:8000](http://localhost:8000) |
+| **DataHub GMS (Local)** | [http://localhost:8080](http://localhost:8080) |
 | **Competition** | [Build with DataHub: The Agent Hackathon](https://datahub.devpost.com) |
 
 ---
@@ -283,7 +294,7 @@ Requirements: Python 3.10+, Node.js 20+, npm
 
 ```bash
 # Clone the repository
-git clone https://github.com/hp/Downloads/PRAXIS.git
+git clone https://github.com/0xkinno/praxis.git
 cd PRAXIS
 
 # Setup virtual environment and dependencies

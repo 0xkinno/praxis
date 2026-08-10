@@ -23,14 +23,14 @@ def score_stability(entity: dict) -> DimensionScore:
             if f.get("nullable") and not f.get("description")
         )
         if len(fields) > 0 and nullable_undocumented > len(fields) * 0.5:
-            score -= 15.0
-            evidence.append(f"{nullable_undocumented} nullable fields without docs (-15)")
+            score -= 10.0
+            evidence.append(f"{nullable_undocumented} nullable fields without docs (-10)")
     
     # Primary keys defined (stability signal)
     primary_keys = schema.get("primaryKeys") or []
     if not primary_keys:
-        score -= 15.0
-        evidence.append("No primary keys defined (-15)")
+        score -= 10.0
+        evidence.append("No primary keys defined (-10)")
     else:
         evidence.append(f"Primary keys defined: {', '.join(primary_keys)}")
     

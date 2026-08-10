@@ -93,7 +93,7 @@ class PraxisWriter:
             )
             self.emitter.emit(mcp)
             
-    def save_document(self, title: str, content: str) -> str:
+    def save_document(self, title: str, content: str) -> bool:
         """Saves a markdown document to the DataHub knowledge base using createPost mutation."""
         from datahub.ingestion.graph.client import DatahubClientConfig, DataHubGraph
         
@@ -106,9 +106,10 @@ class PraxisWriter:
             "input": {
                 "postType": "HOME_PAGE_ANNOUNCEMENT",
                 "content": {
-                    "contentType": "MARKDOWN",
+                    "contentType": "TEXT",
                     "title": title,
-                    "description": content
+                    "description": content,
+                    "link": "http://localhost:3000/digests"
                 }
             }
         }
@@ -117,5 +118,5 @@ class PraxisWriter:
         config = DatahubClientConfig(server=self.gms_url, token=self.token)
         graph = DataHubGraph(config)
         res = graph.execute_graphql(query, variables)
-        return res.get("createPost")
+        return res.get("createPost", False)
 
