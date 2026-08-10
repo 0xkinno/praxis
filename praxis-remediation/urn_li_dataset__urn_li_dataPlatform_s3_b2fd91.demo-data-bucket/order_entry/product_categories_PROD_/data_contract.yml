@@ -2,7 +2,7 @@
 # Asset: product_categories
 # URN: urn:li:dataset:(urn:li:dataPlatform:s3,b2fd91.demo-data-bucket/order_entry/product_categories,PROD)
 # Trust Score: C- (55.8/100)
-# Generated: 2026-08-09T15:41:49.476787+00:00
+# Generated: 2026-08-10T08:04:41.574393+00:00
 
 contract:
   name: "product_categories_contract"

@@ -2,7 +2,7 @@
 # Asset: order_history
 # URN: urn:li:dataset:(urn:li:dataPlatform:dbt,b2fd91.ORDER_ENTRY_DB.analytics.order_history,PROD)
 # Trust Score: C (63.1/100)
-# Generated: 2026-08-09T15:41:49.357921+00:00
+# Generated: 2026-08-10T08:04:41.341842+00:00
 
 contract:
   name: "order_history_contract"

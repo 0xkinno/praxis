@@ -2,7 +2,7 @@
 # Asset: REGIONS
 # URN: urn:li:dataset:(urn:li:dataPlatform:snowflake,b2fd91.order_entry_db.order_entry.regions,PROD)
 # Trust Score: C (63.3/100)
-# Generated: 2026-08-09T15:41:49.501037+00:00
+# Generated: 2026-08-10T08:04:41.605899+00:00
 
 contract:
   name: "REGIONS_contract"

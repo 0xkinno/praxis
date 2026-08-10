@@ -2,7 +2,7 @@
 # Asset: product_information
 # URN: urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.product_information,PROD)
 # Trust Score: C- (57.8/100)
-# Generated: 2026-08-09T15:41:49.454352+00:00
+# Generated: 2026-08-10T08:04:41.545040+00:00
 
 contract:
   name: "product_information_contract"

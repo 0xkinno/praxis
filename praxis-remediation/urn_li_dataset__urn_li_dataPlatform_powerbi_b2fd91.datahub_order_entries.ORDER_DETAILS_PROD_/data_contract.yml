@@ -2,7 +2,7 @@
 # Asset: ORDER_DETAILS
 # URN: urn:li:dataset:(urn:li:dataPlatform:powerbi,b2fd91.datahub_order_entries.ORDER_DETAILS,PROD)
 # Trust Score: C (63.3/100)
-# Generated: 2026-08-09T15:41:49.436385+00:00
+# Generated: 2026-08-10T08:04:41.523582+00:00
 
 contract:
   name: "ORDER_DETAILS_contract"

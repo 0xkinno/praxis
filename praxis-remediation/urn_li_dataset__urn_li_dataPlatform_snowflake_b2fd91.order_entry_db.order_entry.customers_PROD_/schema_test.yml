@@ -2,7 +2,7 @@
 # Asset: CUSTOMERS
 # URN: urn:li:dataset:(urn:li:dataPlatform:snowflake,b2fd91.order_entry_db.order_entry.customers,PROD)
 # Trust Score: C- (55.8/100)
-# Generated: 2026-08-09T15:41:49.490607+00:00
+# Generated: 2026-08-10T08:04:41.591584+00:00
 #
 # Grounded in DataHub schema metadata for snowflake.CUSTOMERS
 

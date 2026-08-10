@@ -2,7 +2,7 @@
 # Asset: ORDER_DETAILS_REPLICA
 # URN: urn:li:dataset:(urn:li:dataPlatform:snowflake,b2fd91.order_entry_db.analytics.order_details_replica,PROD)
 # Trust Score: D (53.6/100)
-# Generated: 2026-08-09T15:41:49.511246+00:00
+# Generated: 2026-08-10T08:04:41.615192+00:00
 
 contract:
   name: "ORDER_DETAILS_REPLICA_contract"

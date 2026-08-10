@@ -2,7 +2,7 @@
 # Asset: Order Details
 # URN: urn:li:dataset:(urn:li:dataPlatform:looker,b2fd91.order-entry.explore.order_details,PROD)
 # Trust Score: B- (73.3/100)
-# Generated: 2026-08-09T15:41:49.425212+00:00
+# Generated: 2026-08-10T08:04:41.516137+00:00
 
 contract:
   name: "Order Details_contract"

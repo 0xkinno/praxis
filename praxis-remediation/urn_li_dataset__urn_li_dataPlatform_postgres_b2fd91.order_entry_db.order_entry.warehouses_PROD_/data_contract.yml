@@ -2,7 +2,7 @@
 # Asset: warehouses
 # URN: urn:li:dataset:(urn:li:dataPlatform:postgres,b2fd91.order_entry_db.order_entry.warehouses,PROD)
 # Trust Score: C- (57.8/100)
-# Generated: 2026-08-09T15:41:49.460677+00:00
+# Generated: 2026-08-10T08:04:41.550305+00:00
 
 contract:
   name: "warehouses_contract"

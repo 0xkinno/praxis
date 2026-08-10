@@ -2,7 +2,7 @@
 # Asset: COUNTRIES
 # URN: urn:li:dataset:(urn:li:dataPlatform:snowflake,b2fd91.order_entry_db.order_entry.countries,PROD)
 # Trust Score: C- (55.8/100)
-# Generated: 2026-08-09T15:41:49.489056+00:00
+# Generated: 2026-08-10T08:04:41.588914+00:00
 
 contract:
   name: "COUNTRIES_contract"

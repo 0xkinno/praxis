@@ -2,7 +2,7 @@
 # Asset: ORDER_HISTORY
 # URN: urn:li:dataset:(urn:li:dataPlatform:snowflake,b2fd91.order_entry_db.analytics.order_history,PROD)
 # Trust Score: D (53.6/100)
-# Generated: 2026-08-09T15:41:49.485949+00:00
+# Generated: 2026-08-10T08:04:41.585503+00:00
 
 contract:
   name: "ORDER_HISTORY_contract"

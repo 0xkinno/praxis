@@ -2,7 +2,7 @@
 # Asset: ADDRESSES
 # URN: urn:li:dataset:(urn:li:dataPlatform:snowflake,b2fd91.order_entry_db.order_entry.addresses,PROD)
 # Trust Score: C- (55.8/100)
-# Generated: 2026-08-09T15:41:49.487599+00:00
+# Generated: 2026-08-10T08:04:41.587257+00:00
 
 contract:
   name: "ADDRESSES_contract"
