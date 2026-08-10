@@ -28,7 +28,9 @@
 - **Live Remediation Pull Request:** [https://github.com/0xkinno/praxis/pull/2](https://github.com/0xkinno/praxis/pull/2)
 PRAXIS opened a real GitHub Pull Request containing 220 grounded remediation artifacts (dbt tests, assertions, data contracts, freshness configs, documentation) for datasets scoring below the trust threshold, generated during a live assessment against DataHub showcase-ecommerce.
 
-See [docs/walkthrough.md](docs/walkthrough.md) for full architecture detail and execution logs.
+See [docs/walkthrough.md](https://github.com/0xkinno/praxis/blob/main/docs/walkthrough.md) for full architecture detail, scoring calibration metrics, and live execution logs.
+
+Explore [docs/architecture.md](docs/architecture.md) for technical design specs, [docs/demo-script.md](docs/demo-script.md) for step-by-step hackathon video walkthroughs, and [docs/devpost.md](docs/devpost.md) for competition positioning and DataHub integration details.
 
 ---
 
