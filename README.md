@@ -46,7 +46,7 @@ See [docs/walkthrough.md](docs/walkthrough.md) for full architecture detail and 
 
 | Resource | Link |
 |---|---|
-| **Vercel Demo Deployment** | [https://praxis-trust.vercel.app](https://praxis-trust.vercel.app) |
+| **Vercel Demo Deployment** | [https://ui-sigma-mocha.vercel.app](https://ui-sigma-mocha.vercel.app) |
 | **Live Remediation PR** | [https://github.com/0xkinno/praxis/pull/2](https://github.com/0xkinno/praxis/pull/2) |
 | **Dashboard UI (Local)** | [http://localhost:3000](http://localhost:3000) |
 | **API Endpoint (Local)** | [http://localhost:8000](http://localhost:8000) |
