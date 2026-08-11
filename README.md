@@ -48,7 +48,8 @@ Explore [docs/architecture.md](docs/architecture.md) for technical design specs,
 
 | Resource | Link |
 |---|---|
-| **Vercel Demo Deployment** | [https://ui-sigma-mocha.vercel.app](https://ui-sigma-mocha.vercel.app) |
+| **Vercel Demo Deployment** | [https://praxis-intel.vercel.app](https://praxis-intel.vercel.app/) |
+| **Live Video Demo** | [Watch on Youtube](https://youtu.be/3xk4vUwv5l0?si=jo0AuL0wjS39fcVg) |
 | **Live Remediation PR** | [https://github.com/0xkinno/praxis/pull/2](https://github.com/0xkinno/praxis/pull/2) |
 | **Dashboard UI (Local)** | [http://localhost:3000](http://localhost:3000) |
 | **API Endpoint (Local)** | [http://localhost:8000](http://localhost:8000) |
